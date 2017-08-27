@@ -1,8 +1,5 @@
-+++
-title = ""
-description = ""
-date = ""
-categories = []
-tags = []
-thumbnail = ""
-+++
+---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+---
