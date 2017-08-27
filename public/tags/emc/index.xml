@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emc on VirtualMachinery</title>
+    <link>/tags/emc/</link>
+    <description>Recent content in Emc on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2015 23:13:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/emc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMworld Europe 2015 Monday - TAM Day</title>
+      <link>/2015/10/12/vmworld-monday-tam-day/</link>
+      <pubDate>Mon, 12 Oct 2015 23:13:00 +0000</pubDate>
+      
+      <guid>/2015/10/12/vmworld-monday-tam-day/</guid>
+      <description>Dell EMC Yeah, I know, Dell buys EMC for a proper Doctor Evil amount of money, on top of the billions it already owed the banks and VC guys who helped it to go private last year, but like I say, a debt is just a bunch of numbers on a piece of paper until someone actually calls it in. So whatever. VMware is still independent, just as it was last week, so we all have to wait to see just how this shakes out.</description>
+    </item>
+    
+  </channel>
+</rss>

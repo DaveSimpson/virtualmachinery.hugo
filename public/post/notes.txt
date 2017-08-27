@@ -1,0 +1,39 @@
+---
+author: Dave Simpson
+date: 2016-11-11 15:23:00+00:00
+draft: false
+title: 'Away at MidCon #vDM30in30'
+type: post
+url: /2016/11/11/away-at-midcon-vdm30in30/
+categories:
+- Posts
+- VMworld
+thumbnail: "img/20151013vmworld2015train.jpg"
+description: "VMworld Europe 2015 "
+tags: [VMware,VMworld,Community,VMUG]
+---
+
+links
+[@bfd_diplomacy](https://twitter.com/bfd_diplomacy "on the Twitters") 
+or
+[_Mid_**Con**](http://www.fbgames.co.uk/Midcon/default.htm) 
+
+## Images  
+[![British Diplomacy Board](/img/20161111dip.jpg)] (/img/20161111dip.jpg)
+or
+[![dig at kloth.net](/img/20161106dig.png?w=300)] (/img/201611061and1.png)
+
+
+To setup a webserver for hugo:
+
+	cd c:\hugo\sites\virtualmachinery
+	hugo server -D
+
+To create /public
+
+	cd c:\hugo\sites\virtualmachinery
+	hugo
+
+"CertificateArn": "arn:aws:acm:eu-west-2:090654660293:certificate/c42192f9-5144-4239-830b-603ba72e0136"
+
+

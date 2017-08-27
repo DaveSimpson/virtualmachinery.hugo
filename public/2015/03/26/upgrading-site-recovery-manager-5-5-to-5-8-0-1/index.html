@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upgrading Site Recovery Manager 5.5 to 5.8.0.1</title>
+<meta name="description" content=" In which a VMware administrator, architect, designer, implementor, migrator, operator, vExpert (call me what you will) discusses, saves for his own posterity and shares with others, random information regarding the march towards a cloudy future...">
+<meta name="generator" content="Hugo 0.26" />
+<meta property="og:title" content="Upgrading Site Recovery Manager 5.5 to 5.8.0.1" />
+<meta property="og:description" content="VMware vCenter SRM upgrade" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/03/26/upgrading-site-recovery-manager-5-5-to-5-8-0-1/" />
+
+
+
+<meta property="article:published_time" content="2015-03-26T21:01:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-03-26T21:01:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="VirtualMachinery" rel="home">
+						<h1 class="logo__title">VirtualMachinery</h1>
+						<h2 class="logo__tagline">Discussing virtually anything</h2>
+					</a>
+				</div>
+			</div>
+			
+<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT ME</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+<main class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Upgrading Site Recovery Manager 5.5 to 5.8.0.1</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2015-03-26T21:01:00">March 26, 2015</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/posts" rel="category">Posts</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="/img/20150326srm.jpg" alt="Upgrading Site Recovery Manager 5.5 to 5.8.0.1">
+			</figure>
+			<p>More messing around in my lab and it was time to upgrade SRM from 5.5 to 5.8, including an update of the vCenter itself to 5.5 u2d as well as the IBM SVC SRA as precursors to the SRM upgrade itself.</p>
+
+<p>Upgrading vCenter is pretty simple as long as you run a custom installation and step through the components one at a time, SSO first through to vCenter 4th and last. Upgrading an SRA is also straightforward. I found moving from SRM 5.5 to 5.8.0.1 to be considerably more tricky.</p>
+
+<p>The SRM installation seems easy enough, there&rsquo;s an upgrade option where all you need to do is confirm your password information for the account running the SRM service and the account connecting to vCenter itself (they might even be the same account). All the other settings can be retained, same certificates and everything. Coupled with the fact that SRM 5.8 comes with the web client plugin installed as part of the update, it should only take a few minutes, surely?</p>
+
+<p>Wrong!</p>
+
+<p>I ran the updates in parallel on both lab sites, the protected site was all looking good, the SRM icon appeared in the web client without a hitch.</p>
+
+<p><a href="/img/20150326srmup1.png"><img src="/img/20150326srmup1.png" alt="SRM Icon now only in the web client" /></a></p>
+
+<p>The recovery site did not show the icon though, rendering that site half useless at this point. I might be able to recover to it, but I would not be able to do much once there, plus if I lost the protected site, how would I even access the recovery site web plugin?! I was not too perturbed by all this though, since I&rsquo;d done some <a href="http://pubs.vmware.com/srm-58/index.jsp?topic=%2Fcom.vmware.srm.install_config.doc%2FGUID-55A0D565-333C-4A5D-9B34-429DB48DBF5D.html&amp;src=vmw_so_vex_dsimp_889">reading around in the VMware vCenter SRM 5.8 Documentation Center</a> beforehand and knew that if you run the modify installation of SRM then you can update the user account settings once more. I had no luck trying this approach though, there was no change in the overall situation at this point. That said, the sites were still showing up as being paired, my old tried and tested SRM 5.5 protection groups, recovery plans etc. were also in all place, so on the surface, things didn&rsquo;t look so bad, as the &ldquo;Guide to configuring SRM&rdquo; view that appears on a lot of pages in the web client shows&hellip;.</p>
+
+<p><a href="/img/20150326srmup3.png"><img src="/img/20150326srmup3.png" alt="Guide to configuring SRM" /></a></p>
+
+<p>Even the history and SRM reports were still available from the times I&rsquo;d failed over and failed back under version 5.5. Whilst focusing on the missing icon, I had not noticed at this point that there were other issues evident, which I will come on to later.</p>
+
+<p>Now at this point, curiosity got the better of me, would a recovery actually work with a dodgy recovery site? There were clearly issues with the new platform but this is the sort of test you don&rsquo;t get the chance to carry out very often, so I punched the recover button and left things running for a bit.</p>
+
+<p>Don&rsquo;t do this if you&rsquo;re not messing around in your lab!</p>
+
+<p>Not wise to mess with something that is clearly not right, but luckily for me, all my protected VMs ended up running in the recovery site, but as the law of sod would dictate, something else happened in my lab, resulting in a lack of operable hosts in the protected site during the recovery as a result of a disk failure and other oddness. This meant that the VMs in the protected site were not shut down first, nor were the protected site datastores unmapped from hosts. The freshly mapped datastores in the recovery site had not been renamed to remove the &ldquo;snap-&rdquo; start to their names either. This was a clue for another problem, as I no longer had any of the custom settings that I modified my SRM 5.5 installation with carried over at either SRM 5.8 site. All of those settings had to be reset in the web client. (this is much easier than in the previous version). None of this would be a massive deal for most real DR situations as the really important thing is recovering to the recovery site quickly to keep the business alive. In my particular case, the lab test VMs are not on the network anyway, so most of this was no trouble at all. The key point here is that the protected VMs were all up and running in the protected site really quickly, faster than previous versions of SRM. So, not so bad perhaps?</p>
+
+<p>So now I knew that SRM 5.8.0.1 worked under sub-optimal conditions, I had to try to fix everything to start working on a proper setup. I tried another modify installation, a repair installation, a remove and reinstall installation on the recovery site, all whilst changing as little information as possible, but nothing was fixing that AWOL SRM icon issue. Clearly this was more than an account problem.</p>
+
+<p>Having no icon in vCenter in the protected site (the one now running the VMs) was not the only issue as SRM also showed errors in trying  to establish communication with the SRA, with an inability to log in. More trouble was clear as I looked around more, since although the Client Connection status all reported OK, the SRM Connection was not happy.</p>
+
+<p><a href="/img/20150326srmup2.png"><img src="/img/20150326srmup2.png" alt="SRM Connection error" /></a></p>
+
+<p>Normally you get this sort of error if the SRM service is not started, but mine was definitely started and I&rsquo;d re-typed the service account credentials plenty of times too during all those modify installs!</p>
+
+<p>I could also see lots of errors in the SRM logs on both sites (generally found at C:\ProgramData\VMware\VMware vCenter Site Recovery Manager\Logs) along the lines of</p>
+
+<pre><code>2015-03-25T13:59:00.865Z [12556 warning 'RemoteVC' connID=vc-admin-ff91] Failed to connect: (vim.fault.InvalidClientCertificate) {  
+--&gt;    dynamicType = ,   
+--&gt;    faultCause = (vmodl.MethodFault) null,   
+--&gt;    msg = &quot;Received SOAP response fault from []: loginExtensionBySubjectName  
+--&gt; Cannot complete client certificate validation.&quot;,   
+--&gt; }  
+</code></pre>
+
+<p>&ldquo;InvalidClientCertificate&rdquo; and &ldquo;Cannot complete client certificate validation&rdquo; clearly aren&rsquo;t good.</p>
+
+<p>Continuing to take things one step at a time, I figured that if there&rsquo;s communication errors, what about doing modify installs at both sites and updating the user account information? That seemed to do the trick. Suddenly I had the SRM icon visible in both sites. I still had that SRM Connection status problem though. This issue did not get resolved until I did a repair installation on both sites that replaced the certificates with new ones  - even though the installation claimed that the existing certs were valid as below.</p>
+
+<p><a href="/img/20150326srmup4.png"><img src="/img/20150326srmup4.png" alt="Certificate validity" /></a></p>
+
+<p>Generally, you should pick the highlighted option to auto generate a new cert rather than the defaulted option to use the existing certificate. Once this modify installation completed I then followed up by pairing the sites once more, to force the new certificates to be used.</p>
+
+<p><a href="/img/20150326srmup5.png"><img src="/img/20150326srmup5.png" alt="Pair Sites" /></a></p>
+
+<p>The pair site option is not always available (if your sites are paired properly, for instance!)</p>
+
+<p>Because I have yet to replace my disk mappings in the original protected site or simply create a new recovery plan instead, then I don&rsquo;t yet know if I am going to fall victim to the <a href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2093902&amp;src=vmw_so_vex_dsimp_889">&ldquo;linked mode&rdquo; problem</a> that stops SRM from carrying out a recovery until linked mode is removed. Fortunately that&rsquo;s a simple fix.</p>
+
+<ol>
+<li>On the recovery site vCenter Server, navigate to Start &gt; All Programs &gt; vCenter Server Linked Mode Configuration.</li>
+<li>Click Next, select Modify Linked Mode configuration and then click Next.</li>
+<li>Ensure that the checkbox Isolate this vCenter Server instance from Linked Mode group is selected and then click Next.</li>
+<li>Click Continue to isolate the vCenter Server.</li>
+<li>When the wizard is complete, check that the Site Recovery Manager service is still running and start it if necessary.</li>
+<li>Log out of the vSphere Web Client and again log in. You should now see the Array Managers, Protection Groups and Recovery Plans and should be able to run the Recovery. 
+<br /></li>
+</ol>
+
+<p>To summarise so far from issues I faced after the 5.8 update;</p>
+
+<ul>
+<li>Record any Advanced Settings changes for posterity before you start the SRM upgrade</li>
+<li>Check the log files on both sites for errors after the upgrade</li>
+<li>Carry out modify installations on both sites (reaffirming passwords) if the SRM icon doesn&rsquo;t show up</li>
+<li>Carry out any modify installations (replacing certificates) on both sites if there are certificate validation issues seen in the log files
+
+<ul>
+<li>Re-pair the sites using the new certificates if you issue them</li>
+<li>Re-establish communication with the SRAs once new certs are in place</li>
+</ul></li>
+<li>Check that any custom Advanced Settings have been retained</li>
+</ul>
+
+<p>Oh, by the way, if you want to know about setting up SRM 5.8 from scratch, then there&rsquo;s a <a href="http://codyhosterman.com/2014/09/11/vmware-vcenter-site-recovery-manager-5-8/">post from Cody Hosterman </a>which tells you all about that and discusses some of the new features in 5.8 as well. Check it out!</p>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/vmware/" rel="tag">VMware</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/srm/" rel="tag">SRM</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Dave Simpson avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Dave Simpson</span>
+	</div>
+	<div class="authorbox__description">
+		vExpert, London/UK VMUG Leader, Homelabber and amateur hack blogger.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2015/03/17/vexpert-homelab-6-vcenter-configuration/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">vExpert Homelab 6 - vCenter Configuration</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2015/04/20/vmwares-april-20th-launch-of-photon-and-lightware/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">VMware&#39;s April 20th launch of Photon and Lightwave</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "virtualmachinery" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</main>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2017/08/23/ship-blog-from-blogger-to-hugo/">Shipping a blog from Blogger to Hugo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/11/away-at-midcon-vdm30in30/">Away at MidCon #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/">UK VMUG UserCon - Community Focus - #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/09/fun-with-cloudcred-vdm30in30/">Fun with CloudCred! #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/09/a-little-about-me-vdm30in30/">A little about me - #vDM30in30</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/homelab">Homelab</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/posts">Posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/vdm30in30">Vdm30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/vmworld">Vmworld</a></li>
+		</ul>
+	</div>
+</div>
+	
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/https://twitter.com/bfd_diplomacy" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="" rel="noopener noreferrer" href="https://linkedin.com/in/https://www.linkedin.com/in/vdavesimpson/" target="_blank">
+				<svg class="widget-social__link-icon icon-linkedin" viewBox="0 0 352 352" width="24" height="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+				<span>LinkedIn</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/https://github.com/DaveSimpson" target="_blank">
+				<svg class="widget-social__link-icon icon-github" viewBox="0 0 384 374" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/https://www.facebook.com/dave.simpson.9659" target="_blank">
+				<svg class="widget-social__link-icon icon-facebook" viewBox="0 0 352 352" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
+				<span>Facebook</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/aws" title="aws">aws (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/blog" title="blog">blog (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/boardgames" title="boardgames">boardgames (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/certification" title="certification">certification (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cisco" title="cisco">cisco (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cloud" title="cloud">cloud (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cloudcred" title="cloudcred">cloudcred (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/community" title="community">community (25)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/dell" title="dell">dell (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/diplomacy" title="diplomacy">diplomacy (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/dns" title="dns">dns (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/emc" title="emc">emc (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/evo" title="evo">evo (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/feed4ward" title="feed4ward">feed4ward (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/homelab" title="homelab">homelab (7)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/justforfun" title="justforfun">justforfun (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/lightwave" title="lightwave">lightwave (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/midcon" title="midcon">midcon (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/netapp" title="netapp">netapp (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/nuc" title="nuc">nuc (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/nutanix" title="nutanix">nutanix (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/openhomelab" title="openhomelab">openhomelab (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/photon" title="photon">photon (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/podcasts" title="podcasts">podcasts (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/pure-storage" title="pure-storage">pure-storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/ravello" title="ravello">ravello (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/srm" title="srm">srm (4)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/synology" title="synology">synology (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/tam-customer-central" title="tam-customer-central">tam-customer-central (4)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/usercon" title="usercon">usercon (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/v2d" title="v2d">v2d (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vbeers" title="vbeers">vbeers (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vcenter" title="vcenter">vcenter (7)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vchs" title="vchs">vchs (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vcurry" title="vcurry">vcurry (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vdm30in30" title="vdm30in30">vdm30in30 (10)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vexpert" title="vexpert">vexpert (22)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmug" title="vmug">vmug (13)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmware" title="vmware">vmware (41)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmworld" title="vmworld">vmworld (25)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrealize" title="vrealize">vrealize (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrockstar" title="vrockstar">vrockstar (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrops" title="vrops">vrops (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vsan" title="vsan">vsan (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vsphere" title="vsphere">vsphere (9)</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 VirtualMachinery. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+</body>
+</html>

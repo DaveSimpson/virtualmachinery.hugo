@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on VirtualMachinery</title>
+    <link>/categories/posts/</link>
+    <description>Recent content in Posts on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2017 20:23:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shipping a blog from Blogger to Hugo</title>
+      <link>/2017/08/23/ship-blog-from-blogger-to-hugo/</link>
+      <pubDate>Wed, 23 Aug 2017 20:23:00 +0000</pubDate>
+      
+      <guid>/2017/08/23/ship-blog-from-blogger-to-hugo/</guid>
+      <description>This move was actually the culmination of a number of factors. The Blogger platform itself is fine, albeit proprietary and somewhat limited because of that, but you still need a bunch of other things to make that work. As with anything on the internet and I&amp;rsquo;ve sometimes had issues with the other aspects there. More than that though, this was simply a means to get myself into a newer format and learn something new along the way.</description>
+    </item>
+    
+    <item>
+      <title>Away at MidCon #vDM30in30</title>
+      <link>/2016/11/11/away-at-midcon-vdm30in30/</link>
+      <pubDate>Fri, 11 Nov 2016 15:23:00 +0000</pubDate>
+      
+      <guid>/2016/11/11/away-at-midcon-vdm30in30/</guid>
+      <description>@bfd_diplomacy is an unusual twitter handle for an IT geek, but then again, when you understand that the diplomacy bit is the boardgame Diplomacy (and a lot of the people who still play this are in IT it seems) then you might get it. Anyway, in an attempt to step away from the recent IT frenzy, both at work and in the #vDM30in30 challenge, I&amp;rsquo;m away for the weekend as a member of the organising committee of MidCon which is &amp;ldquo;A Boardgame Convention in a Posh Hotel&amp;rdquo; in the middle of the UK.</description>
+    </item>
+    
+    <item>
+      <title>UK VMUG UserCon - Community Focus - #vDM30in30</title>
+      <link>/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/</link>
+      <pubDate>Thu, 10 Nov 2016 09:30:00 +0000</pubDate>
+      
+      <guid>/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/</guid>
+      <description>We&amp;rsquo;re now a mere week away from the VMUG UK UserCon on 17th November, but there is still time toregister ahead the day itself. You should also remember that you can simply turn up on the day, as always. We&amp;rsquo;ll be happy to see you either way. If you want to come to the vCurry the night before (7PM - 9PM, in the Premier Suite at the Motorcycle Museum) then it&amp;rsquo;s best to pre-register for that so we know how many people want feeding.</description>
+    </item>
+    
+    <item>
+      <title>Fun with CloudCred! #vDM30in30</title>
+      <link>/2016/11/09/fun-with-cloudcred-vdm30in30/</link>
+      <pubDate>Wed, 09 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/09/fun-with-cloudcred-vdm30in30/</guid>
+      <description>It&amp;rsquo;s a triple point Tuesday (well, it was when I wrote this and it&amp;rsquo;s OK, they are all triple point Tuesdays) so what better day to take a look at CloudCred and see what it&amp;rsquo;s all about? This is another post as part of the vDM30in30 series that I am trying to keep up with.
+CloudCred was launched by VMware early in 2013 as a learning site, with a pretty solid gamification angle to it, which is what a lot of people were doing at the time.</description>
+    </item>
+    
+    <item>
+      <title>A little about me - #vDM30in30</title>
+      <link>/2016/11/09/a-little-about-me-vdm30in30/</link>
+      <pubDate>Wed, 09 Nov 2016 01:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/09/a-little-about-me-vdm30in30/</guid>
+      <description>Maybe this is a bit of a #vDM30in30 cheat, but I updated the &amp;ldquo;About Me&amp;rdquo; part of this blog to include a whole lot more stuff, as I have not had a lot of time recently to do more with the whole #vDM30in30 thing. Sometimes they make me do stuff at work and sometimes that stuff goes on for a while. This is Tuesdays post, I have another in the can for tomorrow.</description>
+    </item>
+    
+    <item>
+      <title>The Podcasts in my Feed - #vDM30in30</title>
+      <link>/2016/11/07/the-podcasts-in-my-feed-vdm30in30/</link>
+      <pubDate>Mon, 07 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/07/the-podcasts-in-my-feed-vdm30in30/</guid>
+      <description>Every so often, the question gets asked - what are the good tech podcasts that I should be listening to on my commute? (or while dog walking, on the plane back from Barcelona, whilst downhill skiing etc.) OK, I couldn&amp;rsquo;t help it, we&amp;rsquo;re talking about podcasts so bonus points for knowing what podcast that kind of journey related stuff comes from. When thinking of 30 posts to do in a month for #vDM30in30, this was one of the first ideas I jotted down and started work on.</description>
+    </item>
+    
+    <item>
+      <title>Site Outage - #vDM30in30</title>
+      <link>/2016/11/06/site-outage-vdm30in30/</link>
+      <pubDate>Sun, 06 Nov 2016 10:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/06/site-outage-vdm30in30/</guid>
+      <description>I&amp;rsquo;ve just had to recover virtualmachinery.co.uk from an outage. Fortunately, this was my first experience of my blog being unavailable since I added the custom domain on to the front of it a couple of years ago, but non the less, it&amp;rsquo;s left a sour taste in my mouth. Repairing it has also bitten into my blogging time somewhat, but has also given me fuel for a blog post.
+I&amp;rsquo;m right in the middle of blogging for the #vDM30in30 challenge, so I am giving my site a lot more attention than normal so I spotted the problem and set out to investigate.</description>
+    </item>
+    
+    <item>
+      <title>TAM Customer Central at VMworld for #vDM30in30</title>
+      <link>/2016/11/05/tam-customer-central-at-vmworld-for-vdm30in30/</link>
+      <pubDate>Sat, 05 Nov 2016 10:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/05/tam-customer-central-at-vmworld-for-vdm30in30/</guid>
+      <description>So this is a post that comes on the back of a promise made in Barcelona this year to spread the word about TAM Customer Central, an easy promise to keep given that I think it is such a great resource. First off, what&amp;rsquo;s a VMware TAM? Well, he or she is a Technical Account Manager who is dedicated to your Enterprise (this is usually a big company thing) from 1 to 5 days a week, depending on what support level/cost you engage at.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts around VMware on AWS - #vDM30in30</title>
+      <link>/2016/11/04/thoughts-around-vmware-on-aws-vdm30in30/</link>
+      <pubDate>Fri, 04 Nov 2016 08:55:00 +0000</pubDate>
+      
+      <guid>/2016/11/04/thoughts-around-vmware-on-aws-vdm30in30/</guid>
+      <description>It seems like everyone and his dog has written a post about this already, so here&amp;rsquo;s mine.
+The biggest buzz at VMworld Europe was actually about an announcement that came out the week before, which is quite something, considering that a lot of nice announcements were made over the duration of the show as a whole. If you&amp;rsquo;ve been living under a rock for a while, VMware and AWS are planning to co-operate so that by the middle of next year you can run your VMware VM&amp;rsquo;s natively on the AWS cloud.</description>
+    </item>
+    
+    <item>
+      <title>UK VMUG UserCon, November 17th! #vDM30in30</title>
+      <link>/2016/11/03/uk-vmug-usercon-november-17th-vdm30in30/</link>
+      <pubDate>Thu, 03 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/03/uk-vmug-usercon-november-17th-vdm30in30/</guid>
+      <description>In just a couple of weeks, I&amp;rsquo;ll be attending my fourth UK VMUG UserCon, which is set to be the biggest VMUG event in the UK this year. As usual, the UserCon is being held at the National Motorcycle Museum, close to the NEC and Birmingham Airport. This years date for the diary is Thursday 17th November. With the demise of the physical vForum event, this should be the biggest VMware related gathering in the UK this year.</description>
+    </item>
+    
+    <item>
+      <title>My Current Homelab Setup</title>
+      <link>/2016/11/02/my-current-homelab-setup/</link>
+      <pubDate>Wed, 02 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/02/my-current-homelab-setup/</guid>
+      <description>As a confirmed Homelab freak and a#vDM30in30 participant, I guess that a post on the content of my lab would be pretty much expected. I&amp;rsquo;m a permanent member of staff in a large company, so I do have access to a considerable amount of kit on different continents within which I can play around at times, but I&amp;rsquo;m still of the opinion that having something to mess around with at home is viable.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m taking part in the #vDM30in30 Challenge this November</title>
+      <link>/2016/11/01/im-taking-part-in-the-vdm30in30-challenge-this-november/</link>
+      <pubDate>Tue, 01 Nov 2016 08:55:00 +0000</pubDate>
+      
+      <guid>/2016/11/01/im-taking-part-in-the-vdm30in30-challenge-this-november/</guid>
+      <description>As if my November isn&amp;rsquo;t going to be manic enough, I thought I would have a pop at this years #vDM30in30 challenge and do my very best to create 30 at least moderately sensible and decent blog posts in 30 days, whilst also sharing and reading the content created by other folks engaged in the same challenge.
+&amp;ldquo;Why?&amp;rdquo; you may ask, well, I&amp;rsquo;m not sure, it certainly wasn&amp;rsquo;t my idea, but it sounds like a lot of fun and, well, it&amp;rsquo;s there.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 Thursday</title>
+      <link>/2016/10/27/vmworld-europe-2016-thursday-1-week-on/</link>
+      <pubDate>Thu, 20 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/27/vmworld-europe-2016-thursday-1-week-on/</guid>
+      <description>The last day of the show is always the quietest day. Some people are travelling home early, there&amp;rsquo;s less sessions around, certainly no parties after hours to plan for, the solutions exchange gets torn down and basically, everyone&amp;rsquo;s knackered.
+My Thursday was relatively gentle, as a reflection of all of the above. I did have a few sessions booked, but in the end, I ducked most of them, other than the mandatory TAM session, as everything is available online afterwards and there were still some vendors to see, some conversations to have, some people to catch up with, generally some time to be sociable.</description>
+    </item>
+    
+    <item>
+      <title>VMware Europe 2016 Wednesday</title>
+      <link>/2016/10/26/vmware-europe-2016-wednesday-1-week-on/</link>
+      <pubDate>Wed, 19 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/26/vmware-europe-2016-wednesday-1-week-on/</guid>
+      <description>AKA TAM day 2 for me, I’d got so many TAM sessions planned that it was going to prove difficult to keep the step average up!
+TAM 3842 – VMware Cloud on AWS Wednesday morning saw me wake up to discover a session which I did not have on my calendar when I planned my sessions, although I was rather pleased to see it there, given that it was about #VMConAWS.</description>
+    </item>
+    
+    <item>
+      <title>VMware Europe 2016 Tuesday</title>
+      <link>/2016/10/25/vmware-europe-2016-tuesday-1-week-on/</link>
+      <pubDate>Tue, 18 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/25/vmware-europe-2016-tuesday-1-week-on/</guid>
+      <description>This post will focus on the better part of the VMworld Tuesday, from both a time and an enjoyment perspective. Things didn&amp;rsquo;t start too well, I&amp;rsquo;d not gone to bed too late, but it seemed that I was party to Barcelona&amp;rsquo;s loudest ever relationship breakup which took place outside my window at about 4.30 AM, which meant that I failed to get to the vBreakfast for 7AM (sorry Fred, I definitely will make it one year!</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 General Session, eventually</title>
+      <link>/2016/10/18/vmworld-europe-2016-general-session-eventually/</link>
+      <pubDate>Tue, 18 Oct 2016 08:41:00 +0000</pubDate>
+      
+      <guid>/2016/10/18/vmworld-europe-2016-general-session-eventually/</guid>
+      <description>I&amp;rsquo;m looking forward to the General session today, it appears for once that there is more being announced in Europe than we got from Vegas. Given the early release of some training courses, the forthcoming general session is known to contain the release of vSphere 6.5 (and hence VSAN 6.5 also). The recent announcement of the #VMWonAWS setup, using vSphere Foundation, has also garnered massive interest (there&amp;rsquo;s not enough sessions on this and VMware are scrambling to put more on to satisfy the clamouring from the masses).</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 TAM Day</title>
+      <link>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</link>
+      <pubDate>Mon, 17 Oct 2016 08:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</guid>
+      <description>Kicking off the conference in the best way possible is attendance at TAM day (or Partner day if that&amp;rsquo;s your thing). TAM day is a relatively structured day with a number of sessions and of course, that access to the other parts of VMworld which are open on the Monday. There&amp;rsquo;s a growing number of people arriving on the Monday who are neither TAM nor PEX attendees, but there&amp;rsquo;s other conference activities to keep them going too.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 Sunday</title>
+      <link>/2016/10/23/vmworld-europe-2016-sunday-1-week-on/</link>
+      <pubDate>Sun, 16 Oct 2016 23:55:00 +0000</pubDate>
+      
+      <guid>/2016/10/23/vmworld-europe-2016-sunday-1-week-on/</guid>
+      <description>Not sure if this was day 0, day -1 or what, but this is where it all begins for a serious percentage of the VMworld attendees that I know. The normal approach for most people who are going to TAM or PEX things on Monday is to get in on Sunday and then head to the vRockstar party.
+This year I&amp;rsquo;d got an early flight out of Gatwick so was in BCN before the shuttle buses started running, but there&amp;rsquo;s lots of ways to get from the Airport to both the conference site (particularly via the new-for-this-year Fira metro station, which is on L9 Sud along with the airport terminals) and also in to town itself, usually by bus.</description>
+    </item>
+    
+    <item>
+      <title>New site launch - OpenHomelab</title>
+      <link>/2016/05/10/new-site-launch-openhomelab/</link>
+      <pubDate>Tue, 10 May 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/10/new-site-launch-openhomelab/</guid>
+      <description>If you have a Homelab or if you are thinking of constructing a Homelab, if you need to plan on a budget or want to know what everyone else is using, if you&amp;rsquo;ve wondered if you&amp;rsquo;re better off with a Cloudlab, but are not sure of the TCO involved, if you are studying for certifications, have a thirst for knowledge or just money to burn, then today sees the launch of a site designed just for you.</description>
+    </item>
+    
+    <item>
+      <title>vSphere Beta Invitation</title>
+      <link>/2016/04/15/vsphere-beta-invitation/</link>
+      <pubDate>Fri, 15 Apr 2016 18:34:00 +0000</pubDate>
+      
+      <guid>/2016/04/15/vsphere-beta-invitation/</guid>
+      <description>The next vSphere beta will be starting pretty soon and like last time, there is a chance for a public signup. If you have deployed vSphere 5.5 and 6.0 in a portion of your environment, then you are a candidate for the beta. The vSphere team will grant access to the program to selected candidates in stages, but as of yet there is no information released on dates or duration. This vSphere Beta Program is, again, subject to a Master Software Beta Test Agreement which you will need to complete before you gain access to private Beta community to download software and share information.</description>
+    </item>
+    
+    <item>
+      <title>Installing a vROps 6.2 Appliance</title>
+      <link>/2016/03/25/installing-a-vrops-6-2-appliance/</link>
+      <pubDate>Fri, 25 Mar 2016 19:20:00 +0000</pubDate>
+      
+      <guid>/2016/03/25/installing-a-vrops-6-2-appliance/</guid>
+      <description>A post to cover my initial fiddling with vRealise Operations Manager 6.2. Considering I have the vExpert licenses to play with, then installing and configuring some additional monitoring seems like a good idea, especially since the alerting and reporting tools that come baked in to vSphere itself are not that extensive. I&amp;rsquo;ve heard good things about this version of vROps, so let&amp;rsquo;s see how easy this is.
+Installing vROps is not difficult, since like most of the current generation of vSphere add-ons that VMware have released, there&amp;rsquo;s an appliance to use.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading to vCenter/ESxi 6.0U2</title>
+      <link>/2016/03/17/upgrading-to-vcenteresxi-6-0u2/</link>
+      <pubDate>Thu, 17 Mar 2016 23:06:00 +0000</pubDate>
+      
+      <guid>/2016/03/17/upgrading-to-vcenteresxi-6-0u2/</guid>
+      <description>They&amp;rsquo;re fresh out, they contain a whole load of enhancements, and if you&amp;rsquo;re a vExpert or enthusiast running a homelab, then you&amp;rsquo;ll most likely want to get a look at the new vSphere 6.0 Update 2 stuff ASAP.
+Time to quickly upgrade the vCenter Appliance and ESXi hosts to take advantage of the HTML5 interface, built in Host Client, VSAN 6.2 and so on. This is assuming you&amp;rsquo;re not an enterprise with enterprise ways and means, of course&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>vExpert 2016 - Community Edition</title>
+      <link>/2016/02/06/vexpert-2016-community-edition/</link>
+      <pubDate>Sat, 06 Feb 2016 01:28:00 +0000</pubDate>
+      
+      <guid>/2016/02/06/vexpert-2016-community-edition/</guid>
+      <description>Yesterday, VMware announced their list of vExperts for 2016 and I&amp;rsquo;m both proud and humbled to have been selected for the second time. I&amp;rsquo;m standing on the shoulders of giants here, as a lot of the people that I have been inspired by and/or helped by over my years in the VMware community are recognised as vExperts again this year, alongside some new faces. Many folks have been vExperts for a long time and their continued dedication to the VMware ecosystem and generosity with their time is rightly recognised.</description>
+    </item>
+    
+    <item>
+      <title>Are you backing up the vSphere Inventory Database?</title>
+      <link>/2015/12/23/are-you-backing-up-the-vsphere-inventory-database/</link>
+      <pubDate>Wed, 23 Dec 2015 18:10:00 +0000</pubDate>
+      
+      <guid>/2015/12/23/are-you-backing-up-the-vsphere-inventory-database/</guid>
+      <description>The Inventory service came about as a separate item in vSphere 5.x and is the place where all of your web client tags get stored (you ARE using tags, right?) but it also gets used to cache queries destined for the vCenter database from the web client, which reduces the load on the vCenter server database. It&amp;rsquo;s also a database that grows substantially if you ever recover a load of VMs with SRM or similar, but that&amp;rsquo;s another story.</description>
+    </item>
+    
+    <item>
+      <title>New blood in the London VMUG Committee</title>
+      <link>/2015/12/12/new-blood-in-the-london-vmug-committee/</link>
+      <pubDate>Sat, 12 Dec 2015 23:14:00 +0000</pubDate>
+      
+      <guid>/2015/12/12/new-blood-in-the-london-vmug-committee/</guid>
+      <description>I attended my third UK VMUG Conference on the 19th of November (again at the National Motorcycle Museum) an event which is put on by the London VMUG Committee. As planned, I spent the majority of the day in the Community Track, lending my support to all the folks from this amazing community who&amp;rsquo;d come from near and far to present sessions. What with the vCurry and the vQuiz the night before, which gives folks a chance to catch up with old friends and meet new ones, the UK&amp;rsquo;s National VMUG conference is always a great event.</description>
+    </item>
+    
+    <item>
+      <title>vSphere 5.5 u3b released December 8th - plus other VMware releases</title>
+      <link>/2015/12/09/vsphere-5-5-u3b-released-december-8th-plus-other-vmware-releases/</link>
+      <pubDate>Wed, 09 Dec 2015 17:31:00 +0000</pubDate>
+      
+      <guid>/2015/12/09/vsphere-5-5-u3b-released-december-8th-plus-other-vmware-releases/</guid>
+      <description>6 new ESXi 5.5 patches came out overnight. Click here for the full release notes. Your post update 3 VUM baseline would now look like this&amp;hellip;
+   Vendor ID Title KB Article Fixes     ESXi550-Update03 Update 3 Rollup package  vSphere 5.5 Update 3   ESXi550-201510401-BG Updates esx-base KB2133825 Resolves issue with snapshot consolidation/deletion   ESXi550-201512101-SG Updates esx-base KB2135795 Updates OpenSSL to openssl-1.</description>
+    </item>
+    
+    <item>
+      <title>Update SRM 5.8.0.1 to 5.8.1 ASAP if you use linked mode</title>
+      <link>/2015/10/30/update-srm-5-8-0-1-to-5-8-1-asap-if-you-use-linked-mode/</link>
+      <pubDate>Fri, 30 Oct 2015 18:08:00 +0000</pubDate>
+      
+      <guid>/2015/10/30/update-srm-5-8-0-1-to-5-8-1-asap-if-you-use-linked-mode/</guid>
+      <description>VMware have not shouted about this one as much as they should have, given the potential gravity of the situation. If you use linked mode to connect multiple sites and have SRM 5.8.0.1 installed, then you will not be able to run an SRM recovery when you have the sites disconnected. As in, when you are experiencing a disaster which you want to recover from as quickly and painlessly as possible, as in, precisely what you purchased SRM for in the first place, you&amp;rsquo;re out of luck.</description>
+    </item>
+    
+    <item>
+      <title>vCenter 5.5 Linked Mode issues on Windows Server</title>
+      <link>/2015/10/19/vcenter-5-5-linked-mode-issues-on-windows-server/</link>
+      <pubDate>Mon, 19 Oct 2015 20:37:00 +0000</pubDate>
+      
+      <guid>/2015/10/19/vcenter-5-5-linked-mode-issues-on-windows-server/</guid>
+      <description>I recently saw a problem where a vCenter linked mode configuration appears to have failed half way through. It&amp;rsquo;s highly unusual in that from the C# Client when certain users log in to certain vCenters, they can see the newly added vCenter visible in linked mode as if everything was perfect. Other C# client users, anyone logging in to other vCenters or anyone using the web client does not see this intended end state.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Thursday, or, TAM Day 3</title>
+      <link>/2015/10/19/vmworld-thursday-or-tam-day-3/</link>
+      <pubDate>Mon, 19 Oct 2015 17:36:00 +0000</pubDate>
+      
+      <guid>/2015/10/19/vmworld-thursday-or-tam-day-3/</guid>
+      <description>A lot of folks head back home on Thursday, so the train and bus were both pretty empty this morning. The hardy folks who do make it in generally make use of the bag drop today for all those suitcases full of accumulated swag.
+I had 5 sessions planned for Thursday, so for me, this was a busy day session wise. Most of these were TAM sessions, so TCC was my first port of call for some welcome tea and croissants.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Wednesday everything else</title>
+      <link>/2015/10/18/vmworld-wednesday-everything-else/</link>
+      <pubDate>Sun, 18 Oct 2015 14:09:00 +0000</pubDate>
+      
+      <guid>/2015/10/18/vmworld-wednesday-everything-else/</guid>
+      <description>Rubrik The first thing I had on my agenda after the General Session was to take a look at Rubrik, one of the companies that have been getting a fair aount of buzz lately and so I took the opportunity to go and find out why. A hyperconverged type solution, a number of blocks (briks, obviously) a nice interface, dedupe, replication, all that seems to be the thing to do these days.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Wednesday General Session</title>
+      <link>/2015/10/18/vmworld-wednesday-general-session/</link>
+      <pubDate>Sun, 18 Oct 2015 13:43:00 +0000</pubDate>
+      
+      <guid>/2015/10/18/vmworld-wednesday-general-session/</guid>
+      <description>Setup Poised with the same team as yesterday in the Hang Space awaiting the General Session, plus a couple of extra faces. The raised desks and UK plug adapters are well set up for the blogger types.
+
+Cloud Stuff The cloud academy video from US VMworld opens up proceedings again, so I am expecting Carl, but it&amp;rsquo;s Sanjay Poonen, without people dressed as clouds or apps. He even slips in a Louis Suarez comment, but I didn&amp;rsquo;t bite.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Tuesday - Everything else (or TAM day 2)</title>
+      <link>/2015/10/18/vmworld-tuesday-everything-else-or-tam-day-2/</link>
+      <pubDate>Sun, 18 Oct 2015 13:02:00 +0000</pubDate>
+      
+      <guid>/2015/10/18/vmworld-tuesday-everything-else-or-tam-day-2/</guid>
+      <description>TAM Session - ESXi Lifecycle I was straight off to the first of my TAM sessions after the general session, covering the ESXi lifecycle. The basic gist of this one is that VMware recognise that customers find it time consuming to maintain hosts and possibly difficult to spin up hosts. There&amp;rsquo;s one tool to provision (auto deploy), another place to go for initial configuration (host profiles) and then another to manage going forward (VUM).</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Tuesday General Session</title>
+      <link>/2015/10/13/vmworld-tuesday-general-session/</link>
+      <pubDate>Tue, 13 Oct 2015 11:48:00 +0000</pubDate>
+      
+      <guid>/2015/10/13/vmworld-tuesday-general-session/</guid>
+      <description>Setup A better start than last year since we were able to set up in the Hang Space before anyone started speaking. I managed to get a seat along with @julian_wood, @scott_lowe and @vcdxnz001 and had a go at the minimal setup, iPad for blogging, iPhone for twitter and a bluetooth keyboard. That wasn&amp;rsquo;t as &amp;ldquo;corridor warrior&amp;rdquo; as I had hoped, it doesn&amp;rsquo;t really cut it as a practical solution, is&amp;rsquo;s simply too slow to keep up and I struggled to blog and watch the twitter feed at the same time.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Monday - TAM Day</title>
+      <link>/2015/10/12/vmworld-monday-tam-day/</link>
+      <pubDate>Mon, 12 Oct 2015 23:13:00 +0000</pubDate>
+      
+      <guid>/2015/10/12/vmworld-monday-tam-day/</guid>
+      <description>Dell EMC Yeah, I know, Dell buys EMC for a proper Doctor Evil amount of money, on top of the billions it already owed the banks and VC guys who helped it to go private last year, but like I say, a debt is just a bunch of numbers on a piece of paper until someone actually calls it in. So whatever. VMware is still independent, just as it was last week, so we all have to wait to see just how this shakes out.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Sunday</title>
+      <link>/2015/10/11/vmworld-euope-sunday/</link>
+      <pubDate>Sun, 11 Oct 2015 22:22:00 +0000</pubDate>
+      
+      <guid>/2015/10/11/vmworld-euope-sunday/</guid>
+      <description>Ok, so first things first, I don&amp;rsquo;t know what day this is, day 1, day 0 or day -1, so it will have to stay as Sunday. That means flying to VMworld Europe day, a number of hours spent in transit, by now the normal Airbnb approach to staying in Barcelona, considering that basically all I will do in this apartment is sleep and shower. OK, and blog.
+It&amp;rsquo;s only a couple of hours from Gatwick to Barcelona, but today&amp;rsquo;s transport involved car, train, plane, taxi, taxi, feet, which would have been a lot worse had I not been able to sponge lifts off of unnamed people&amp;rsquo;s expenses :-) You have to love this community.</description>
+    </item>
+    
+    <item>
+      <title>Nutanix NPP</title>
+      <link>/2015/09/30/nutanix-npp/</link>
+      <pubDate>Wed, 30 Sep 2015 17:37:00 +0000</pubDate>
+      
+      <guid>/2015/09/30/nutanix-npp/</guid>
+      <description>There&amp;rsquo;s no doubt that the likes of Nutanix, and SimpliVity are the standard bearers for a whole raft of Hyperconverged Infrastructure (HCI) products which are changing the way that we can think about our infrastructure these days. There&amp;rsquo;s definitely use cases out there. Maybe you&amp;rsquo;re finally having your year of VDI, your FC fabric switches might be getting full, perhaps a new requirement needs separate storage or maybe, like me, you&amp;rsquo;re just HCI curious.</description>
+    </item>
+    
+    <item>
+      <title>Pure Storage Product comparison</title>
+      <link>/2015/09/15/pure-storage-product-comparison/</link>
+      <pubDate>Tue, 15 Sep 2015 23:30:00 +0000</pubDate>
+      
+      <guid>/2015/09/15/pure-storage-product-comparison/</guid>
+      <description>This is a quick post to compare the releases of some Pure Storage products which I&amp;rsquo;ve been using over the past couple of months now.
+I have to say I was very impressed with the towel 1.0 release, excellent capacity and coverage, a smooth side and a rough side, the well known Pure orange colour prominent throughout. At some 160 x 100 cm, there&amp;rsquo;s coverage for even the most, shall we say, &amp;lsquo;demanding&amp;rsquo; IT Professional.</description>
+    </item>
+    
+    <item>
+      <title>VSAN 6.1 and 6.NEXT</title>
+      <link>/2015/09/01/vsan-6-1-and-6-next/</link>
+      <pubDate>Tue, 01 Sep 2015 13:37:00 +0000</pubDate>
+      
+      <guid>/2015/09/01/vsan-6-1-and-6-next/</guid>
+      <description>Cormac Hogan has posted a couple of blog posts in the last 24 hours detailing the new features offered by the newly announced (today?) release of VSAN 6.1 and also lifted the veil somewhat on what can be expected in the next release, including another VSAN beta signup offer.
+Whatever you may think about the adoption rates for VSAN there&amp;rsquo;s no arguing with the pace of development coming out of VMware for this technology.</description>
+    </item>
+    
+    <item>
+      <title>VMworld US 2015 Keynote thoughts</title>
+      <link>/2015/08/31/vmworld-2015-keynote-thoughts/</link>
+      <pubDate>Mon, 31 Aug 2015 19:28:00 +0000</pubDate>
+      
+      <guid>/2015/08/31/vmworld-2015-keynote-thoughts/</guid>
+      <description>So here we go, The Keynote from the first day of VMworld 2015, San Fran. This is more a stream of thought than anything totally structured/sensible and is partly my notes to see what I need to go look at later on!
+Apps and Cloud huh? Opening with a video before Carl Eschenbach takes the stage. There are a record 23,000 folks attending in person this year, somewhat different from the 1,200 in the first year, plus loads of folks like me watching from further afield.</description>
+    </item>
+    
+    <item>
+      <title>VMware Validated Designs announced</title>
+      <link>/2015/08/31/vmware-validated-designs-announced/</link>
+      <pubDate>Mon, 31 Aug 2015 16:31:00 +0000</pubDate>
+      
+      <guid>/2015/08/31/vmware-validated-designs-announced/</guid>
+      <description>Sometime yesterday, VMware announced the existence of VMware Validated Designs, which are a series of architecture designs validated by VMware experts. These appear to be a number of fluid designs (sorry to use a brave liquid word there but you&amp;rsquo;ll see what I mean) which will be updated regularly, meaning that the design principles espoused within will not be stuck at a single release version and more importantly will not be stuck at a single product.</description>
+    </item>
+    
+    <item>
+      <title>Initial CloudLab environment creation with Ravello</title>
+      <link>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</link>
+      <pubDate>Thu, 20 Aug 2015 20:35:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</guid>
+      <description>Once you have created an account with Ravello and Uploaded some images, then it is time to start building a lab environment on someone else&amp;rsquo;s cloud. If you&amp;rsquo;ve not signed up for a Ravello account, then you can do that here and if you&amp;rsquo;ve not read my first article in this series, then you should go here. I&amp;rsquo;ll wait.
+So, to get started you&amp;rsquo;ll need to create an empty, cloud optimised, ESXi application and then install ESXi within it.</description>
+    </item>
+    
+    <item>
+      <title>Ravello announce the General Availability of InceptionSX</title>
+      <link>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</link>
+      <pubDate>Thu, 20 Aug 2015 07:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</guid>
+      <description>Background Ravello Systems was founded in early 2011 by the same people who created the KVM hypervisor. Rami Tamir is the CEO and he took an invited audience of vExperts through a preview of Ravello InceptionSX on a pre-launch briefing early in August 2015.
+The Ravello Systems mission statement is to provide Cloud Economics (Pay as you go, on demand, endless capacity at commodity prices) for All Workloads across All Environments while Maintaining SLAs, Tools, Security etc.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe Session picks</title>
+      <link>/2015/08/18/vmworld-europe-session-picks/</link>
+      <pubDate>Tue, 18 Aug 2015 20:22:00 +0000</pubDate>
+      
+      <guid>/2015/08/18/vmworld-europe-session-picks/</guid>
+      <description>So, the VMworld Europe schedule builder opened up today and some of the sessions are already full up. Scary. Almost every guided lab session was full up by lunchtime on day 1, I wonder if the same folks got in to all of them, quite likely!
+This is the list I am thinking of at the moment. I am sure this will get turned on it&amp;rsquo;s head when more info comes out about TAM Customer Central, additional sessions get announced after the releases announced at VMworld US and I&amp;rsquo;ll need time to take a look at the solutions exchange and talk toa ll the clever folks around the place.</description>
+    </item>
+    
+    <item>
+      <title>Time for a Cloud Lab</title>
+      <link>/2015/08/16/time-for-a-cloud-lab/</link>
+      <pubDate>Sun, 16 Aug 2015 21:04:00 +0000</pubDate>
+      
+      <guid>/2015/08/16/time-for-a-cloud-lab/</guid>
+      <description>Those lovely people over at Ravello Systems have given all of the current vExperts access to their nested virtualisation offering, so each month I have some free hours to run the equivalent of a homelab, but it&amp;rsquo;s located somewhere out on AWS or Google, fronted by the clever Ravello interface. This should allow me to test out a whole bunch of things that are difficult to set up on a home lab, so I can keep the on premises stuff for running my production and put my dev / test in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>VMware&#39;s April 20th launch of Photon and Lightwave</title>
+      <link>/2015/04/20/vmwares-april-20th-launch-of-photon-and-lightware/</link>
+      <pubDate>Mon, 20 Apr 2015 16:56:00 +0000</pubDate>
+      
+      <guid>/2015/04/20/vmwares-april-20th-launch-of-photon-and-lightware/</guid>
+      <description>Over the last couple of weeks there&amp;rsquo;s been a lot of talk about products being launched by VMware&amp;rsquo;s relatively new Cloud-Native Applications division. Now the launch date is here and even though it&amp;rsquo;s not quite launch time yet, the cat is out of the bag.
+The products are currently known as;
+Project Photon - A stripped down Linux version optimised to run on the vSphere hypervisor which is designed solely to host and package containers.</description>
+    </item>
+    
+    <item>
+      <title>Upgrading Site Recovery Manager 5.5 to 5.8.0.1</title>
+      <link>/2015/03/26/upgrading-site-recovery-manager-5-5-to-5-8-0-1/</link>
+      <pubDate>Thu, 26 Mar 2015 21:01:00 +0000</pubDate>
+      
+      <guid>/2015/03/26/upgrading-site-recovery-manager-5-5-to-5-8-0-1/</guid>
+      <description>More messing around in my lab and it was time to upgrade SRM from 5.5 to 5.8, including an update of the vCenter itself to 5.5 u2d as well as the IBM SVC SRA as precursors to the SRM upgrade itself.
+Upgrading vCenter is pretty simple as long as you run a custom installation and step through the components one at a time, SSO first through to vCenter 4th and last.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 6 - vCenter Configuration</title>
+      <link>/2015/03/17/vexpert-homelab-6-vcenter-configuration/</link>
+      <pubDate>Tue, 17 Mar 2015 00:13:00 +0000</pubDate>
+      
+      <guid>/2015/03/17/vexpert-homelab-6-vcenter-configuration/</guid>
+      <description>So, you&amp;rsquo;ve got a nice new vCenter 6 up and running, maybe you have an external PSC as well? Jolly good! Now what?
+There&amp;rsquo;s a whole bunch of additional configuration items that you should look at amending before too long. Log in as your SSO Admin account - administrator@vsphere.local (or whatever you changed it to during the installation) and away we go.
+Let&amp;rsquo;s start with something new - the Download Remote Console option.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 5 - ESXi 6.0 - Nuc Nuc Nuc</title>
+      <link>/2015/03/14/vexpert-homelab-5-esxi-6-0-nuc-nuc-nuc/</link>
+      <pubDate>Sat, 14 Mar 2015 18:04:00 +0000</pubDate>
+      
+      <guid>/2015/03/14/vexpert-homelab-5-esxi-6-0-nuc-nuc-nuc/</guid>
+      <description>It was time to replace my old workhorse HP ML115&amp;rsquo;s with some new kit ready for the vSphere 6 launch and given the amount of commentary around the community at large I decided to take the plunge and source a bunch of Intel NUC devices, namely the D54250WYK model.
+No point doing things by halves, so I got three* and stuck 16GB memory in each, which should give me enough room to build a decent lab!</description>
+    </item>
+    
+    <item>
+      <title>Synology DSM 5.2 Beta will run Docker containers</title>
+      <link>/2015/03/13/synology-dsm-5-2-beta-will-run-docker-containers/</link>
+      <pubDate>Fri, 13 Mar 2015 14:57:00 +0000</pubDate>
+      
+      <guid>/2015/03/13/synology-dsm-5-2-beta-will-run-docker-containers/</guid>
+      <description>Synology have announced their latest beta this week. DSM 5.2 Beta now gives you the abilty to run Docker Containers natively.
+This will be interesting for a bunch of vExperts, who use these devices. After I get vSphere 6.0 bedded in, I imagine that I will be looking at the option that this presents where I will be able to have a Docker implementation within the vSphere environment and play with the portability options by shifting them in and out of the Synology.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 4 - Installing a vCenter 6 VCSA using an external PSC</title>
+      <link>/2015/03/13/vexpert-homelab-4-installing-a-vcenter-6-vcsa-using-an-external-psc/</link>
+      <pubDate>Fri, 13 Mar 2015 02:07:00 +0000</pubDate>
+      
+      <guid>/2015/03/13/vexpert-homelab-4-installing-a-vcenter-6-vcsa-using-an-external-psc/</guid>
+      <description>Following directly on from my previous post where I install a PSC, it&amp;rsquo;s time for a vCenter. There&amp;rsquo;s not a lot of point having one without the other. The webpage I used to install the PSC is still open so I can just click on Install again and accept the EULA again and it is right back to the connecting to target server options once more.
+The same options as last time for this.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 3 - Installing vCenter 6 as a PSC</title>
+      <link>/2015/03/12/vexpert-homelab-3-installing-vcenter-6-as-a-psc/</link>
+      <pubDate>Thu, 12 Mar 2015 23:25:00 +0000</pubDate>
+      
+      <guid>/2015/03/12/vexpert-homelab-3-installing-vcenter-6-as-a-psc/</guid>
+      <description>So at last, vSphere 6 release day. Let&amp;rsquo;s crack on with this new PSC stuff! vSphere 6.0 splits vCenters into a Platform Services Controller piece (SSO, licensing, Certificates - all the bits that really tie your setup together) and the vCenter installation itself. These can be on the same server (VM, right?) or different servers, creating stand-alone PSC&amp;rsquo;s which can be load balanced and so on.
+The vCenter Deployment Guide has been available for a few days already and that is really a step by step guide through the installations that you can do.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 2 - More Cisco 3550 Config</title>
+      <link>/2015/03/12/vexpert-homelab-2-more-cisco-3550-config/</link>
+      <pubDate>Thu, 12 Mar 2015 23:20:00 +0000</pubDate>
+      
+      <guid>/2015/03/12/vexpert-homelab-2-more-cisco-3550-config/</guid>
+      <description>After setting up the basics of a Cisco 3550 in the previous blog in this series, it is time to carry out the more advanced setup. Here I&amp;rsquo;ll step through some of the options that are good to set up if you want to run a vSphere homelab on one of this type of switch. Ideally, you will want one which is L3 capable so routes as well as switches (the 3550 series is one of those oddities that can be L2 only or L3 as well, depending on the age or model).</description>
+    </item>
+    
+    <item>
+      <title>Site Recovery Manager Advanced Settings</title>
+      <link>/2015/03/05/site-recovery-manager-advanced-settings/</link>
+      <pubDate>Thu, 05 Mar 2015 18:02:00 +0000</pubDate>
+      
+      <guid>/2015/03/05/site-recovery-manager-advanced-settings/</guid>
+      <description>At this point, I am not going to go in to detail about the installation of SRM 5.x, as there are already lots of good blog posts / series out there about this. SRM 6.x though, fair game!
+However, I wanted to lay out some of the changes that should be made after an installation of your SRM environment before you start your testing, to give you the best chance of success as possible.</description>
+    </item>
+    
+    <item>
+      <title>vCenter 5.5 and SRM 5.x Services on Windows Server 2008 failing to start</title>
+      <link>/2015/03/04/vcenter-5-5-and-srm-5-x-services-on-windows-server-2008-failing-to-start/</link>
+      <pubDate>Wed, 04 Mar 2015 23:07:00 +0000</pubDate>
+      
+      <guid>/2015/03/04/vcenter-5-5-and-srm-5-x-services-on-windows-server-2008-failing-to-start/</guid>
+      <description>A few oddities I have discovered recently when working on one of my lab environments, so I thought that I would note them here for my own ends if nothing else.
+It is possible that a Windows Server based vCenter 5.5 (in my case) will not start after a reboot with the error message in vpxd.log reporting &amp;ldquo;Unable to create SSO facade: Invalid response code: 404 Not Found&amp;rdquo;. The quick way to fix this is to restart the VMware Secure Token Service, as per VMware KB2061412.</description>
+    </item>
+    
+    <item>
+      <title>About Speaking at January&#39;s LonVMUG</title>
+      <link>/post/2015-02-19-about-speaking-at-januarys-lonvmug/</link>
+      <pubDate>Thu, 19 Feb 2015 13:56:00 +0000</pubDate>
+      
+      <guid>/post/2015-02-19-about-speaking-at-januarys-lonvmug/</guid>
+      <description>Ask people what their fears are and with the overwhelming majority, you&amp;rsquo;ll get to public speaking sooner rather than later. Most people would rather do almost anything else, so to go and present to a room full of technical experts and be judged by them all, when you could just sit back and listen to someone else, in blissful anonymity? Well, surely there&amp;rsquo;s no decision to be made? As a consequence, it&amp;rsquo;s no surprise that the erstwhile LonVMUG ctte.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 1 - Setting up a Cisco 3550 switch from scratch</title>
+      <link>/2015/02/14/vexpert-homelab-1-setting-up-a-cisco-3550-switch-from-scratch/</link>
+      <pubDate>Sat, 14 Feb 2015 22:42:00 +0000</pubDate>
+      
+      <guid>/2015/02/14/vexpert-homelab-1-setting-up-a-cisco-3550-switch-from-scratch/</guid>
+      <description>I&amp;rsquo;ve been running a homelab for a number of years, but with the impending release of vSphere 6, my pair of old HP ML115 servers were looking a little tired. After being selected as a vExpert in 2015, I figured it was time to treat myself to some new infrastructure and also to rig up a proper network solution to underpin it all. I&amp;rsquo;d had an old Cisco 3550 (the layer 3 version) hanging around for a while waiting for this moment.</description>
+    </item>
+    
+    <item>
+      <title>VMware launches vSphere 6.0 and various other happenings</title>
+      <link>/2015/02/11/vmware-launches-vsphere-6-0-and-various-other-happenings/</link>
+      <pubDate>Wed, 11 Feb 2015 00:29:00 +0000</pubDate>
+      
+      <guid>/2015/02/11/vmware-launches-vsphere-6-0-and-various-other-happenings/</guid>
+      <description>The worst kept secret in Hypervisor history was finally revealed last week, when VMware went public with the launch of vSphere 6.0 (alongside a swathe of other products) in what they are calling their biggest ever release. So big in fact that it&amp;rsquo;s taking 28 days to get through it if you read up at onecloud.vmware.com, a microsite introduced under the title &amp;ldquo;One Cloud, Any Application&amp;rdquo;. 28 days is handy in that it gives people time to digest a range of features and also write additional contributions (more on that later).</description>
+    </item>
+    
+    <item>
+      <title>EVALExperience</title>
+      <link>/2015/02/08/evalexperience/</link>
+      <pubDate>Sun, 08 Feb 2015 03:36:00 +0000</pubDate>
+      
+      <guid>/2015/02/08/evalexperience/</guid>
+      <description>In a move that I have to say that I did not see coming (but then I think no-one did) VMUG recently announced that subscribers to their VMUG Advantage initiative would also receive EVALExperience licenses for a number of vSphere related products meaning that these products are now available for use with a 365 day license which you can renew as long as you maintain your VMUG Advantage subscription .</description>
+    </item>
+    
+    <item>
+      <title>vExpert 2015</title>
+      <link>/2015/02/05/vexpert-2015/</link>
+      <pubDate>Thu, 05 Feb 2015 22:10:00 +0000</pubDate>
+      
+      <guid>/2015/02/05/vexpert-2015/</guid>
+      <description>Well, well, well. I&amp;rsquo;m pleased to say that I have been awarded the title of VMware vExpert for 2015, my first time! You can see the full list here on the VMTN site. Congratulations to all the new and returning vExperts named this year.
+It&amp;rsquo;s rather humbling to gain this recognition and it really is great to see so many of the #LonVMUG folks who&amp;rsquo;ve helped me along the way be named as well.</description>
+    </item>
+    
+    <item>
+      <title>LonVMUG January 22nd 2015 - vFactor, vBeers and more</title>
+      <link>/2015/01/17/lonvmug-january-22nd-2015-vfactor-vbeers-and-more/</link>
+      <pubDate>Sat, 17 Jan 2015 19:42:00 +0000</pubDate>
+      
+      <guid>/2015/01/17/lonvmug-january-22nd-2015-vfactor-vbeers-and-more/</guid>
+      <description>It&amp;rsquo;s nearly time for the first #LonVMUG of 2015. As usual, a cracking line-up has been finalised for this all-day event, but for myself and 4 other delegates, this will be an extra special day, cos we get to present!
+Long-time LonVMUG stalwart Mike Laverick put together a #Feed4ward initiative in cahoots with
+Duncan Epping and Scott Lowe as an attempt to solicit more community content at VMUGs around the world by mentoring would be presenters before their big day in front of an audience.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2014 - TAM Sessions</title>
+      <link>/2014/10/23/vmworld-europe-tam-sessions/</link>
+      <pubDate>Thu, 23 Oct 2014 00:09:00 +0000</pubDate>
+      
+      <guid>/2014/10/23/vmworld-europe-tam-sessions/</guid>
+      <description>An extra post about my favourite part of VMworld from the organised conference perspective&amp;hellip;
+I thought that the TAM sessions were by far the best sessions I attended. None of them were presented by the most well known vRockstars (they were out in the normal breakout sessions, doing their thing - and from the ones I saw, doing it very well) the TAM sessions were all by the engineers and product managers who you don&amp;rsquo;t know as well, which was great.</description>
+    </item>
+    
+    <item>
+      <title>VMWorld Europe 2014 - Day 3</title>
+      <link>/2014/10/20/vmworld-europe-day-3/</link>
+      <pubDate>Mon, 20 Oct 2014 21:56:00 +0000</pubDate>
+      
+      <guid>/2014/10/20/vmworld-europe-day-3/</guid>
+      <description>The final day, an early start to the sessions with no keynote to overrun into the first session, so I went straight into a 9am breakout session.
+Session: INF2311 - vCenter Server Architecture &amp;amp; Deployment Deep Dive Some good tips here for the folks running (or planning to run) vCenter 5.5 specifically around the placement of vCenter components. Do not, do not, do NOT run your Inventory service on a different server to your vCenter server service!</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2014 - Day 2</title>
+      <link>/2014/10/20/vmworld-europe-day-2/</link>
+      <pubDate>Mon, 20 Oct 2014 17:34:00 +0000</pubDate>
+      
+      <guid>/2014/10/20/vmworld-europe-day-2/</guid>
+      <description>I&amp;rsquo;m on a bit of a roll now! The &amp;lsquo;second&amp;rsquo; day of VMworld Europe started with another keynote, just the same as San Fran (same general format, same general content). Fortunately for those of us wanting to blog/tweet during this, the doors that were closed yesterday were open by the time I got to the hangspace, so I was in and settled with a coffee and pain au chocolat before 9am.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2014 - Day 1</title>
+      <link>/2014/10/19/vmworld-europe-day-1/</link>
+      <pubDate>Sun, 19 Oct 2014 20:49:00 +0000</pubDate>
+      
+      <guid>/2014/10/19/vmworld-europe-day-1/</guid>
+      <description>Admittedly, I&amp;rsquo;d already been in Barcelona for a while after the TAM day (partner day for most people) on Monday, so we&amp;rsquo;d already had confusion amongst the bloggers as to what day it was., perhaps we should stick with &amp;lsquo;Tuesday&amp;rsquo; and have done with it? Apologies for any tense changes here, this post was mostly written at VMworld, but not published then.
+Keynote This was my first opportunity to attend a European keynote, so I was hoping to be able to get ensconsed in the hangspace or the bloggers area and tweet or blog from there, whilst hoping it would be different from the US keynote.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2014 - Prelude and TAM Day</title>
+      <link>/2014/10/19/vmworld-europe-prelude-and-tam-day/</link>
+      <pubDate>Sun, 19 Oct 2014 20:43:00 +0000</pubDate>
+      
+      <guid>/2014/10/19/vmworld-europe-prelude-and-tam-day/</guid>
+      <description>I have to admit to being pretty excited to attend my first VMworld in 6 Years, this time with the additional perk of having the Monday lined up as well, as part of the TAM experience. Technical Account Manager, that is. Same day as Partner Day, but for those of us who warrant or buy this level of service, I guess. I work for a large American Company so this was something I get that I was not going to get so often, as my TAM is in the US, whereas I am not!</description>
+    </item>
+    
+    <item>
+      <title>VMware VCP550D &#39;delta&#39; exam for VCP5-DCV holders</title>
+      <link>/2014/10/02/vmware-vcp550d-delta-exam-for-vcp5-dcv-holders/</link>
+      <pubDate>Thu, 02 Oct 2014 22:40:00 +0000</pubDate>
+      
+      <guid>/2014/10/02/vmware-vcp550d-delta-exam-for-vcp5-dcv-holders/</guid>
+      <description>A couple of days ago, VMware announced that they would offer existing VCP5-DCV certified folks a shortcut to extending their certification, by introducing a new delta exam. The new test is a Pearson Vue delivered test as you would expect and has the code VCP550D. The exam is the same duration (75 minutes) and length (65 questions) as the normal VCP5 exam, but it is taken remotely like the introductory level VCA exams and is also considerably cheaper than the full exam, at £80.</description>
+    </item>
+    
+    <item>
+      <title>VMware enters the Hyper-Converged space with VMware EVO.</title>
+      <link>/2014/08/25/vmware-enters-the-hyper-converged-space-with-vmware-evo/</link>
+      <pubDate>Mon, 25 Aug 2014 23:21:00 +0000</pubDate>
+      
+      <guid>/2014/08/25/vmware-enters-the-hyper-converged-space-with-vmware-evo/</guid>
+      <description>In a move that justifies (if that&amp;rsquo;s the right word) the developments made by Nutanix, Simplivity et al, VMware announced two releases of their Hyper-Converged Infrastructure Appliance (HCIA) products, which are called VMware EVO. This is the Project Marvin initiative which has been whispered about for a while since an internal VMware poster was seen up on a wall by someone who shouldn&amp;rsquo;t have seen it! The EVO part means Evolution and the product names RAIL and RACK are down to the amount of space they take up in the datacentre.</description>
+    </item>
+    
+    <item>
+      <title>VMworld 2014 Day 1</title>
+      <link>/2014/08/25/vmworld-2014-day-1/</link>
+      <pubDate>Mon, 25 Aug 2014 22:32:00 +0000</pubDate>
+      
+      <guid>/2014/08/25/vmworld-2014-day-1/</guid>
+      <description>A personal snapshot of some of the big news from the show;
+The keynote from day 1 mentioned IT bravely delivering brave products by making brave decisions, bravely. There were also some new product numbers announced, which is what people really want to hear, I guess. I&amp;rsquo;m sure Pat Gelsinger broke the vSphere 6.0 Beta NDA by mentioning that it contained VVols, but who&amp;rsquo;s gonna tell him? There was also an update to the cloud stack, with vCloud Suite 5.</description>
+    </item>
+    
+    <item>
+      <title>VMware announces public Beta of vSphere 6</title>
+      <link>/2014/07/03/vmware-announces-public-beta-of-vsphere-6/</link>
+      <pubDate>Thu, 03 Jul 2014 00:49:00 +0000</pubDate>
+      
+      <guid>/2014/07/03/vmware-announces-public-beta-of-vsphere-6/</guid>
+      <description>I&amp;rsquo;ve been talking to my VMware Technical Account Manager about access to the vSphere Beta for a while now but in a surprising move (for me at least) VMware have just announced the public beta of vSphere 6. Of course, the usual beta rules apply, meaning no public disclosure about the contents of the beta, but since it&amp;rsquo;s a public beta, anyone and everyone can sign up for it. That means I don&amp;rsquo;t need to tell you anything as you can go and look for yourself.</description>
+    </item>
+    
+    <item>
+      <title>Install and Boot ESXi from a USB stick</title>
+      <link>/2014/07/03/install-and-boot-esxi-from-a-usb-stick/</link>
+      <pubDate>Thu, 03 Jul 2014 00:35:00 +0000</pubDate>
+      
+      <guid>/2014/07/03/install-and-boot-esxi-from-a-usb-stick/</guid>
+      <description>An increasing number of motherboards these days have USB sockets built in, which makes it very easy (and cheap) to run an ESX host, without having to obtain any local DAS storage. Good for the home labber, also good for the corporate guy who&amp;rsquo;s boot-from-SAN usually.
+There&amp;rsquo;s no point re-inventing the wheel here, since there are already blogs out there that talk you through the entire process - like this one from Brian Graf at vtagion;</description>
+    </item>
+    
+    <item>
+      <title>LonVMUG, vBeers and a vCurry!</title>
+      <link>/2013/07/05/lonvmug-vbeers-and-a-vcurry/</link>
+      <pubDate>Fri, 05 Jul 2013 19:42:00 +0000</pubDate>
+      
+      <guid>/2013/07/05/lonvmug-vbeers-and-a-vcurry/</guid>
+      <description>Wow! I nearly didn&amp;rsquo;t make it. A particularly &amp;ldquo;late one at the office&amp;rdquo; the night before saw me get to bed just short of 4am, with the prospect of a couple of hours train journey for a 9 something LonVMUG start. So, forget all about starting the day at 6am then.
+The late start to the day turned out to be particularly gutting as the Twitter chat around the event pretty much ceased whilst Frank Dennerman was doing his presentation, so I was pretty miffed that I didn&amp;rsquo;t catch it live as it was obviously getting everyone&amp;rsquo;s attention.</description>
+    </item>
+    
+    <item>
+      <title>mbralign for NetApp filestores</title>
+      <link>/2013/06/06/mbralign-for-netapp-filestores/</link>
+      <pubDate>Thu, 06 Jun 2013 15:20:00 +0000</pubDate>
+      
+      <guid>/2013/06/06/mbralign-for-netapp-filestores/</guid>
+      <description>Intro Migrating VMs to a NetApp filer is all well and good, but there&amp;rsquo;s a disk alignment issue to get past once those migrations are done, otherwise your expected performance will be seriously impacted.
+You should use the version of the mbralign tool included with the latest NetApp Virtual Storage Console (VSC) to check VMDK partition alignment. There is a version of mbralign for ESX hosts and one for ESXi hosts and you&amp;rsquo;re given the option to select the correct one at download.</description>
+    </item>
+    
+    <item>
+      <title>VMware vCloud Hybrid Service</title>
+      <link>/2013/05/24/vmware-vcloud-hybrid-service/</link>
+      <pubDate>Fri, 24 May 2013 17:54:00 +0000</pubDate>
+      
+      <guid>/2013/05/24/vmware-vcloud-hybrid-service/</guid>
+      <description>Just as I was thinking about starting this blog site, along came the public release of VMware&amp;rsquo;s entry in to the cloud space, vCloud Hybrid Service. I think that VMware first started telling me that I was on a &amp;ldquo;Journey to the Cloud&amp;rdquo; at VMworld way back in 2008. I guess I have been meandering a bit since then as I am not sure that I have gone too far on that journey.</description>
+    </item>
+    
+    <item>
+      <title>Why Now?</title>
+      <link>/2013/05/24/why-now/</link>
+      <pubDate>Fri, 24 May 2013 17:18:00 +0000</pubDate>
+      
+      <guid>/2013/05/24/why-now/</guid>
+      <description>Why start a totally new blog about virtualisation topics at this late stage in the game, when there&amp;rsquo;s already a whole host of excellent sites out there? Sites I use myself regularly, too. I&amp;rsquo;ve shied away from this before, thinking that I will find it difficult to be on top of the game enough to provide useful content to complement existing sites.
+Well, there&amp;rsquo;s this thing&amp;hellip; The other day I found out about a website calledCloudCred, which is basically a VMware backed educational website, which incentivises its members to develop knowledge and build collaborative teams via gamification.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Midcon on VirtualMachinery</title>
+    <link>/tags/midcon/</link>
+    <description>Recent content in Midcon on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Nov 2016 15:23:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/midcon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Away at MidCon #vDM30in30</title>
+      <link>/2016/11/11/away-at-midcon-vdm30in30/</link>
+      <pubDate>Fri, 11 Nov 2016 15:23:00 +0000</pubDate>
+      
+      <guid>/2016/11/11/away-at-midcon-vdm30in30/</guid>
+      <description>@bfd_diplomacy is an unusual twitter handle for an IT geek, but then again, when you understand that the diplomacy bit is the boardgame Diplomacy (and a lot of the people who still play this are in IT it seems) then you might get it. Anyway, in an attempt to step away from the recent IT frenzy, both at work and in the #vDM30in30 challenge, I&amp;rsquo;m away for the weekend as a member of the organising committee of MidCon which is &amp;ldquo;A Boardgame Convention in a Posh Hotel&amp;rdquo; in the middle of the UK.</description>
+    </item>
+    
+  </channel>
+</rss>

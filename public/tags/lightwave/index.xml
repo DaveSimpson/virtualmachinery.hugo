@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lightwave on VirtualMachinery</title>
+    <link>/tags/lightwave/</link>
+    <description>Recent content in Lightwave on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2015 16:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lightwave/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMware&#39;s April 20th launch of Photon and Lightwave</title>
+      <link>/2015/04/20/vmwares-april-20th-launch-of-photon-and-lightware/</link>
+      <pubDate>Mon, 20 Apr 2015 16:56:00 +0000</pubDate>
+      
+      <guid>/2015/04/20/vmwares-april-20th-launch-of-photon-and-lightware/</guid>
+      <description>Over the last couple of weeks there&amp;rsquo;s been a lot of talk about products being launched by VMware&amp;rsquo;s relatively new Cloud-Native Applications division. Now the launch date is here and even though it&amp;rsquo;s not quite launch time yet, the cat is out of the bag.
+The products are currently known as;
+Project Photon - A stripped down Linux version optimised to run on the vSphere hypervisor which is designed solely to host and package containers.</description>
+    </item>
+    
+  </channel>
+</rss>

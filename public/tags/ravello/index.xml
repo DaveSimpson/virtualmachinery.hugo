@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ravello on VirtualMachinery</title>
+    <link>/tags/ravello/</link>
+    <description>Recent content in Ravello on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2015 20:35:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ravello/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Initial CloudLab environment creation with Ravello</title>
+      <link>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</link>
+      <pubDate>Thu, 20 Aug 2015 20:35:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</guid>
+      <description>Once you have created an account with Ravello and Uploaded some images, then it is time to start building a lab environment on someone else&amp;rsquo;s cloud. If you&amp;rsquo;ve not signed up for a Ravello account, then you can do that here and if you&amp;rsquo;ve not read my first article in this series, then you should go here. I&amp;rsquo;ll wait.
+So, to get started you&amp;rsquo;ll need to create an empty, cloud optimised, ESXi application and then install ESXi within it.</description>
+    </item>
+    
+    <item>
+      <title>Ravello announce the General Availability of InceptionSX</title>
+      <link>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</link>
+      <pubDate>Thu, 20 Aug 2015 07:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</guid>
+      <description>Background Ravello Systems was founded in early 2011 by the same people who created the KVM hypervisor. Rami Tamir is the CEO and he took an invited audience of vExperts through a preview of Ravello InceptionSX on a pre-launch briefing early in August 2015.
+The Ravello Systems mission statement is to provide Cloud Economics (Pay as you go, on demand, endless capacity at commodity prices) for All Workloads across All Environments while Maintaining SLAs, Tools, Security etc.</description>
+    </item>
+    
+    <item>
+      <title>Time for a Cloud Lab</title>
+      <link>/2015/08/16/time-for-a-cloud-lab/</link>
+      <pubDate>Sun, 16 Aug 2015 21:04:00 +0000</pubDate>
+      
+      <guid>/2015/08/16/time-for-a-cloud-lab/</guid>
+      <description>Those lovely people over at Ravello Systems have given all of the current vExperts access to their nested virtualisation offering, so each month I have some free hours to run the equivalent of a homelab, but it&amp;rsquo;s located somewhere out on AWS or Google, fronted by the clever Ravello interface. This should allow me to test out a whole bunch of things that are difficult to set up on a home lab, so I can keep the on premises stuff for running my production and put my dev / test in the cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

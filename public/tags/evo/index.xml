@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evo on VirtualMachinery</title>
+    <link>/tags/evo/</link>
+    <description>Recent content in Evo on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Aug 2014 23:21:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/evo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMware enters the Hyper-Converged space with VMware EVO.</title>
+      <link>/2014/08/25/vmware-enters-the-hyper-converged-space-with-vmware-evo/</link>
+      <pubDate>Mon, 25 Aug 2014 23:21:00 +0000</pubDate>
+      
+      <guid>/2014/08/25/vmware-enters-the-hyper-converged-space-with-vmware-evo/</guid>
+      <description>In a move that justifies (if that&amp;rsquo;s the right word) the developments made by Nutanix, Simplivity et al, VMware announced two releases of their Hyper-Converged Infrastructure Appliance (HCIA) products, which are called VMware EVO. This is the Project Marvin initiative which has been whispered about for a while since an internal VMware poster was seen up on a wall by someone who shouldn&amp;rsquo;t have seen it! The EVO part means Evolution and the product names RAIL and RACK are down to the amount of space they take up in the datacentre.</description>
+    </item>
+    
+  </channel>
+</rss>

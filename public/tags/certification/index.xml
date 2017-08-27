@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certification on VirtualMachinery</title>
+    <link>/tags/certification/</link>
+    <description>Recent content in Certification on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 2015 17:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nutanix NPP</title>
+      <link>/2015/09/30/nutanix-npp/</link>
+      <pubDate>Wed, 30 Sep 2015 17:37:00 +0000</pubDate>
+      
+      <guid>/2015/09/30/nutanix-npp/</guid>
+      <description>There&amp;rsquo;s no doubt that the likes of Nutanix, and SimpliVity are the standard bearers for a whole raft of Hyperconverged Infrastructure (HCI) products which are changing the way that we can think about our infrastructure these days. There&amp;rsquo;s definitely use cases out there. Maybe you&amp;rsquo;re finally having your year of VDI, your FC fabric switches might be getting full, perhaps a new requirement needs separate storage or maybe, like me, you&amp;rsquo;re just HCI curious.</description>
+    </item>
+    
+    <item>
+      <title>VMware VCP550D &#39;delta&#39; exam for VCP5-DCV holders</title>
+      <link>/2014/10/02/vmware-vcp550d-delta-exam-for-vcp5-dcv-holders/</link>
+      <pubDate>Thu, 02 Oct 2014 22:40:00 +0000</pubDate>
+      
+      <guid>/2014/10/02/vmware-vcp550d-delta-exam-for-vcp5-dcv-holders/</guid>
+      <description>A couple of days ago, VMware announced that they would offer existing VCP5-DCV certified folks a shortcut to extending their certification, by introducing a new delta exam. The new test is a Pearson Vue delivered test as you would expect and has the code VCP550D. The exam is the same duration (75 minutes) and length (65 questions) as the normal VCP5 exam, but it is taken remotely like the introductory level VCA exams and is also considerably cheaper than the full exam, at £80.</description>
+    </item>
+    
+  </channel>
+</rss>

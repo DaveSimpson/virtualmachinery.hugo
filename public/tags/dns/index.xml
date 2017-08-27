@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dns on VirtualMachinery</title>
+    <link>/tags/dns/</link>
+    <description>Recent content in Dns on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2016 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Site Outage - #vDM30in30</title>
+      <link>/2016/11/06/site-outage-vdm30in30/</link>
+      <pubDate>Sun, 06 Nov 2016 10:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/06/site-outage-vdm30in30/</guid>
+      <description>I&amp;rsquo;ve just had to recover virtualmachinery.co.uk from an outage. Fortunately, this was my first experience of my blog being unavailable since I added the custom domain on to the front of it a couple of years ago, but non the less, it&amp;rsquo;s left a sour taste in my mouth. Repairing it has also bitten into my blogging time somewhat, but has also given me fuel for a blog post.
+I&amp;rsquo;m right in the middle of blogging for the #vDM30in30 challenge, so I am giving my site a lot more attention than normal so I spotted the problem and set out to investigate.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nutanix on VirtualMachinery</title>
+    <link>/tags/nutanix/</link>
+    <description>Recent content in Nutanix on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Oct 2016 08:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nutanix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMworld Europe 2016 TAM Day</title>
+      <link>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</link>
+      <pubDate>Mon, 17 Oct 2016 08:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</guid>
+      <description>Kicking off the conference in the best way possible is attendance at TAM day (or Partner day if that&amp;rsquo;s your thing). TAM day is a relatively structured day with a number of sessions and of course, that access to the other parts of VMworld which are open on the Monday. There&amp;rsquo;s a growing number of people arriving on the Monday who are neither TAM nor PEX attendees, but there&amp;rsquo;s other conference activities to keep them going too.</description>
+    </item>
+    
+    <item>
+      <title>Nutanix NPP</title>
+      <link>/2015/09/30/nutanix-npp/</link>
+      <pubDate>Wed, 30 Sep 2015 17:37:00 +0000</pubDate>
+      
+      <guid>/2015/09/30/nutanix-npp/</guid>
+      <description>There&amp;rsquo;s no doubt that the likes of Nutanix, and SimpliVity are the standard bearers for a whole raft of Hyperconverged Infrastructure (HCI) products which are changing the way that we can think about our infrastructure these days. There&amp;rsquo;s definitely use cases out there. Maybe you&amp;rsquo;re finally having your year of VDI, your FC fabric switches might be getting full, perhaps a new requirement needs separate storage or maybe, like me, you&amp;rsquo;re just HCI curious.</description>
+    </item>
+    
+  </channel>
+</rss>

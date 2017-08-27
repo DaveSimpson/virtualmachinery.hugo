@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vExpert Homelab 3 - Installing vCenter 6 as a PSC</title>
+<meta name="description" content=" In which a VMware administrator, architect, designer, implementor, migrator, operator, vExpert (call me what you will) discusses, saves for his own posterity and shares with others, random information regarding the march towards a cloudy future...">
+<meta name="generator" content="Hugo 0.26" />
+<meta property="og:title" content="vExpert Homelab 3 - Installing vCenter 6 as a PSC" />
+<meta property="og:description" content="Installing a vSphere 6.0 standalone PSC" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/03/12/vexpert-homelab-3-installing-vcenter-6-as-a-psc/" />
+
+
+
+<meta property="article:published_time" content="2015-03-12T23:25:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-03-12T23:25:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="VirtualMachinery" rel="home">
+						<h1 class="logo__title">VirtualMachinery</h1>
+						<h2 class="logo__tagline">Discussing virtually anything</h2>
+					</a>
+				</div>
+			</div>
+			
+<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT ME</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+<main class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">vExpert Homelab 3 - Installing vCenter 6 as a PSC</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2015-03-12T23:25:00">March 12, 2015</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/posts" rel="category">Posts</a>, <a class="meta-categories__link" href="/categories/homelab" rel="category">Homelab</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="/img/20150211vsphere60.png" alt="vExpert Homelab 3 - Installing vCenter 6 as a PSC">
+			</figure>
+			
+
+<p>So at last, vSphere 6 release day. Let&rsquo;s crack on with this new PSC stuff! vSphere 6.0 splits vCenters into a Platform Services Controller piece (SSO, licensing, Certificates - all the bits that really tie your setup together) and the vCenter installation itself. These can be on the same server (VM, right?) or different servers, creating stand-alone PSC&rsquo;s which can be load balanced and so on.</p>
+
+<p>The vCenter Deployment Guide has been available for a few days already and that is really a step by step guide through the installations that you can do.</p>
+
+<p><a href="http://blogs.vmware.com/vsphere/2015/03/vcenter-server-6-0-deployment-guide.html">http://blogs.vmware.com/vsphere/2015/03/vcenter-server-6-0-deployment-guide.html</a><br />
+<a href="https://www.vmware.com/resources/techresources/10453">https://www.vmware.com/resources/techresources/10453</a></p>
+
+<p>What it is not though, is a design guide. Not a lot of mention of how you would use some of these different configurations. To my mind at least, the PSC&rsquo;s are designed to be the single internal VMware administrative layer. From there you can set up and delegate out other access, so different vCenters with different roles maybe (VDI, production, dev/test) can all plug in to the PSC layer. Other VMware products will also plug in to this. vRealize Automation, NSX etc. It&rsquo;s mention of NSX which really makes me think that you should have a single PSC layer as these things will reach out over your entire enterprise.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Being as an upgrade from a previous version of vSphere to the new version will mean an integrated PSC installation (that you cannot go back from) then I decided that a parallel installation of the new version would teach me the most. I downloaded the media and mounted the file VMware-VCSA-all-6.0.0-2562643.iso. Browsing the contents presents you with an html file in the root directory called vcsa-setup.html and that presented me with this;</p>
+
+<p><a href="/img/20150312hl301.png"><img src="/img/20150312hl301.png" alt="Please install the client integration plugin" /></a></p>
+
+<p>So not much I can do here other than close the browser and run the file</p>
+
+<p>VMware-ClientIntegrationPlugin-6.0.0.exe from the vcsa folder. Very little to do here other than change the installation directory if you want. The default is the standard VMware folder.</p>
+
+<p><a href="/img/20150312hl302.png"><img src="/img/20150312hl302.png" alt="installation destination folder" /></a></p>
+
+<p>Then you can open the html file again.  This time, after waiting a whole 4 seconds, I got this&hellip;</p>
+
+<p><a href="/img/20150312hl303.png"><img src="/img/20150312hl303.png" alt="install now works" /></a></p>
+
+<p>Then after clicking allow, at last!</p>
+
+<p><a href="/img/20150312hl304.png"><img src="/img/20150312hl304.png" alt="press the install button" /></a></p>
+
+<p>At this point I chose Install, as I said above, I wanted this to be a completely new installation. Then I accepted the EULA as the first of 11 installation config screens.</p>
+
+<p>Then you will need to select an existing ESXi host to use as the installation target and supply root level credentials;</p>
+
+<p><a href="/img/20150312hl305.png"><img src="/img/20150312hl305.png" alt="host address" /></a></p>
+
+<p>There&rsquo;s an immediate validation after this step and you’ll also get asked to verify a new SSL cert (don’t worry, SSL will get easier in 6.0!) Then you need to pick an appliance name and select a password. I’m installing this one as a standalone PSC so I used an imaginative name. You need a suitably complex password, (I ended up using upper case, lower case, numeric and special characters and the picture below shows the warnings you could get.</p>
+
+<p><a href="/img/20150312hl306.png"><img src="/img/20150312hl306.png" alt="appliance name" /></a></p>
+
+<p>The default password settings for the administrator account will be visible once you are installed, but are set out here;</p>
+
+<p>8-20 Characters in length.</p>
+
+<p>A minimum of 1 Special character, 1 numeric character, 1 uppercase and 1 lowercase character.</p>
+
+<p>Now, those choices.</p>
+
+<p><a href="/img/20150312hl307.png"><img src="/img/20150312hl307.png" alt="Install External PSC" /></a></p>
+
+<p>The default choice is the top one, embedded PSC, but for additional complexity, let’s have an External PSC. There’s no database to configure at this point, so my 11 steps are now 10.</p>
+
+<p>Because this is a brand new setup, Creating a new SSO domain is next.</p>
+
+<p><a href="/img/20150312hl308.png"><img src="/img/20150312hl308.png" alt="Set up SSO" /></a></p>
+
+<p>Very imaginative names in use there. But as this is a new setup, no SSO site selection option step remains, this is getting easier and easier. On to step 7 out of 9.</p>
+
+<p>This is hardly a step either, it&rsquo;s just a confirmation.</p>
+
+<p><a href="/img/20150312hl309.png"><img src="/img/20150312hl309.png" alt="confirm" /></a></p>
+
+<p>Next is disk space selection. I don’t think I will be doing a whole lot with my PSC’s so let’s go this on the disk as well.</p>
+
+<p><a href="/img/20150312hl310.png"><img src="/img/20150312hl310.png" alt="disk space" /></a></p>
+
+<p>There&rsquo;s another validation step here whilst the installation verifies the disk space.</p>
+
+<p>Then on to something meaty, the network settings tab! A lot to fill in here in comparison to the other screens so far.</p>
+
+<p><a href="/img/20150312hl311.png"><img src="/img/20150312hl311.png" alt="network settings" /></a></p>
+
+<p>There&rsquo;s more below what’s shown as well, but it’s only a tick box to give you the option to enable SSH. Like all such VMware installations, bitter experience states that you should ensure that you have working DNS beforehand, so make sure that you have already added your static IP details to your DNS before you go any further.</p>
+
+<p>Then the last screen is just a summary tab, click Finish and away we go.</p>
+
+<p><a href="/img/20150312hl312.png"><img src="/img/20150312hl312.png" alt="deployment time" /></a></p>
+
+<p>Now this takes a while, but once you&rsquo;re done you should see something like this&hellip;</p>
+
+<p><a href="/img/20150312hl313.png"><img src="/img/20150312hl313.png" alt="installation complete" /></a></p>
+
+<p>Woohoo! We have a running PSC. Just look at all those lovely hard disks&hellip;</p>
+
+<p><a href="/img/20150312hl314.png"><img src="/img/20150312hl314.png" alt="a PSC with lots of disks" /></a></p>
+
+<p>And that&rsquo;s it, next job will be to point a vCenter at this thing.</p>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/homelab/" rel="tag">Homelab</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/vexpert/" rel="tag">vExpert</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/vcenter/" rel="tag">vCenter</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/vmware/" rel="tag">VMware</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Dave Simpson avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Dave Simpson</span>
+	</div>
+	<div class="authorbox__description">
+		vExpert, London/UK VMUG Leader, Homelabber and amateur hack blogger.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2015/03/12/vexpert-homelab-2-more-cisco-3550-config/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">vExpert Homelab 2 - More Cisco 3550 Config</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2015/03/13/vexpert-homelab-4-installing-a-vcenter-6-vcsa-using-an-external-psc/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">vExpert Homelab 4 - Installing a vCenter 6 VCSA using an external PSC</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "virtualmachinery" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</main>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2017/08/23/ship-blog-from-blogger-to-hugo/">Shipping a blog from Blogger to Hugo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/11/away-at-midcon-vdm30in30/">Away at MidCon #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/">UK VMUG UserCon - Community Focus - #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/09/fun-with-cloudcred-vdm30in30/">Fun with CloudCred! #vDM30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2016/11/09/a-little-about-me-vdm30in30/">A little about me - #vDM30in30</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/homelab">Homelab</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/posts">Posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/vdm30in30">Vdm30in30</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/vmworld">Vmworld</a></li>
+		</ul>
+	</div>
+</div>
+	
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/https://twitter.com/bfd_diplomacy" target="_blank">
+				<svg class="widget-social__link-icon icon-twitter" viewBox="0 0 384 312" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="" rel="noopener noreferrer" href="https://linkedin.com/in/https://www.linkedin.com/in/vdavesimpson/" target="_blank">
+				<svg class="widget-social__link-icon icon-linkedin" viewBox="0 0 352 352" width="24" height="24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+				<span>LinkedIn</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/https://github.com/DaveSimpson" target="_blank">
+				<svg class="widget-social__link-icon icon-github" viewBox="0 0 384 374" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/https://www.facebook.com/dave.simpson.9659" target="_blank">
+				<svg class="widget-social__link-icon icon-facebook" viewBox="0 0 352 352" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
+				<span>Facebook</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/aws" title="aws">aws (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/blog" title="blog">blog (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/boardgames" title="boardgames">boardgames (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/certification" title="certification">certification (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cisco" title="cisco">cisco (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cloud" title="cloud">cloud (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/cloudcred" title="cloudcred">cloudcred (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/community" title="community">community (25)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/dell" title="dell">dell (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/diplomacy" title="diplomacy">diplomacy (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/dns" title="dns">dns (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/emc" title="emc">emc (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/evo" title="evo">evo (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/feed4ward" title="feed4ward">feed4ward (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/homelab" title="homelab">homelab (7)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/justforfun" title="justforfun">justforfun (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/lightwave" title="lightwave">lightwave (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/midcon" title="midcon">midcon (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/netapp" title="netapp">netapp (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/nuc" title="nuc">nuc (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/nutanix" title="nutanix">nutanix (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/openhomelab" title="openhomelab">openhomelab (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/photon" title="photon">photon (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/podcasts" title="podcasts">podcasts (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/pure-storage" title="pure-storage">pure-storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/ravello" title="ravello">ravello (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/srm" title="srm">srm (4)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/synology" title="synology">synology (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/tam-customer-central" title="tam-customer-central">tam-customer-central (4)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/usercon" title="usercon">usercon (2)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/v2d" title="v2d">v2d (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vbeers" title="vbeers">vbeers (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vcenter" title="vcenter">vcenter (7)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vchs" title="vchs">vchs (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vcurry" title="vcurry">vcurry (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vdm30in30" title="vdm30in30">vdm30in30 (10)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vexpert" title="vexpert">vexpert (22)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmug" title="vmug">vmug (13)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmware" title="vmware">vmware (41)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vmworld" title="vmworld">vmworld (25)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrealize" title="vrealize">vrealize (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrockstar" title="vrockstar">vrockstar (3)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vrops" title="vrops">vrops (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vsan" title="vsan">vsan (1)</a>
+		<a class="widget__link widget__link--taglist" href="/tags/vsphere" title="vsphere">vsphere (9)</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 VirtualMachinery. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+</body>
+</html>

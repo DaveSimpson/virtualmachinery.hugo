@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on VirtualMachinery</title>
+    <link>/tags/blog/</link>
+    <description>Recent content in Blog on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2017 20:23:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shipping a blog from Blogger to Hugo</title>
+      <link>/2017/08/23/ship-blog-from-blogger-to-hugo/</link>
+      <pubDate>Wed, 23 Aug 2017 20:23:00 +0000</pubDate>
+      
+      <guid>/2017/08/23/ship-blog-from-blogger-to-hugo/</guid>
+      <description>This move was actually the culmination of a number of factors. The Blogger platform itself is fine, albeit proprietary and somewhat limited because of that, but you still need a bunch of other things to make that work. As with anything on the internet and I&amp;rsquo;ve sometimes had issues with the other aspects there. More than that though, this was simply a means to get myself into a newer format and learn something new along the way.</description>
+    </item>
+    
+  </channel>
+</rss>

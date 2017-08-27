@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tam Customer Central on VirtualMachinery</title>
+    <link>/tags/tam-customer-central/</link>
+    <description>Recent content in Tam Customer Central on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Nov 2016 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tam-customer-central/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TAM Customer Central at VMworld for #vDM30in30</title>
+      <link>/2016/11/05/tam-customer-central-at-vmworld-for-vdm30in30/</link>
+      <pubDate>Sat, 05 Nov 2016 10:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/05/tam-customer-central-at-vmworld-for-vdm30in30/</guid>
+      <description>So this is a post that comes on the back of a promise made in Barcelona this year to spread the word about TAM Customer Central, an easy promise to keep given that I think it is such a great resource. First off, what&amp;rsquo;s a VMware TAM? Well, he or she is a Technical Account Manager who is dedicated to your Enterprise (this is usually a big company thing) from 1 to 5 days a week, depending on what support level/cost you engage at.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Thursday, or, TAM Day 3</title>
+      <link>/2015/10/19/vmworld-thursday-or-tam-day-3/</link>
+      <pubDate>Mon, 19 Oct 2015 17:36:00 +0000</pubDate>
+      
+      <guid>/2015/10/19/vmworld-thursday-or-tam-day-3/</guid>
+      <description>A lot of folks head back home on Thursday, so the train and bus were both pretty empty this morning. The hardy folks who do make it in generally make use of the bag drop today for all those suitcases full of accumulated swag.
+I had 5 sessions planned for Thursday, so for me, this was a busy day session wise. Most of these were TAM sessions, so TCC was my first port of call for some welcome tea and croissants.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Tuesday - Everything else (or TAM day 2)</title>
+      <link>/2015/10/18/vmworld-tuesday-everything-else-or-tam-day-2/</link>
+      <pubDate>Sun, 18 Oct 2015 13:02:00 +0000</pubDate>
+      
+      <guid>/2015/10/18/vmworld-tuesday-everything-else-or-tam-day-2/</guid>
+      <description>TAM Session - ESXi Lifecycle I was straight off to the first of my TAM sessions after the general session, covering the ESXi lifecycle. The basic gist of this one is that VMware recognise that customers find it time consuming to maintain hosts and possibly difficult to spin up hosts. There&amp;rsquo;s one tool to provision (auto deploy), another place to go for initial configuration (host profiles) and then another to manage going forward (VUM).</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2014 - TAM Sessions</title>
+      <link>/2014/10/23/vmworld-europe-tam-sessions/</link>
+      <pubDate>Thu, 23 Oct 2014 00:09:00 +0000</pubDate>
+      
+      <guid>/2014/10/23/vmworld-europe-tam-sessions/</guid>
+      <description>An extra post about my favourite part of VMworld from the organised conference perspective&amp;hellip;
+I thought that the TAM sessions were by far the best sessions I attended. None of them were presented by the most well known vRockstars (they were out in the normal breakout sessions, doing their thing - and from the ones I saw, doing it very well) the TAM sessions were all by the engineers and product managers who you don&amp;rsquo;t know as well, which was great.</description>
+    </item>
+    
+  </channel>
+</rss>

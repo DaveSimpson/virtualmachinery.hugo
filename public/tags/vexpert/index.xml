@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vexpert on VirtualMachinery</title>
+    <link>/tags/vexpert/</link>
+    <description>Recent content in Vexpert on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Nov 2016 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vexpert/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Current Homelab Setup</title>
+      <link>/2016/11/02/my-current-homelab-setup/</link>
+      <pubDate>Wed, 02 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/02/my-current-homelab-setup/</guid>
+      <description>As a confirmed Homelab freak and a#vDM30in30 participant, I guess that a post on the content of my lab would be pretty much expected. I&amp;rsquo;m a permanent member of staff in a large company, so I do have access to a considerable amount of kit on different continents within which I can play around at times, but I&amp;rsquo;m still of the opinion that having something to mess around with at home is viable.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 Thursday</title>
+      <link>/2016/10/27/vmworld-europe-2016-thursday-1-week-on/</link>
+      <pubDate>Thu, 20 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/27/vmworld-europe-2016-thursday-1-week-on/</guid>
+      <description>The last day of the show is always the quietest day. Some people are travelling home early, there&amp;rsquo;s less sessions around, certainly no parties after hours to plan for, the solutions exchange gets torn down and basically, everyone&amp;rsquo;s knackered.
+My Thursday was relatively gentle, as a reflection of all of the above. I did have a few sessions booked, but in the end, I ducked most of them, other than the mandatory TAM session, as everything is available online afterwards and there were still some vendors to see, some conversations to have, some people to catch up with, generally some time to be sociable.</description>
+    </item>
+    
+    <item>
+      <title>VMware Europe 2016 Wednesday</title>
+      <link>/2016/10/26/vmware-europe-2016-wednesday-1-week-on/</link>
+      <pubDate>Wed, 19 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/26/vmware-europe-2016-wednesday-1-week-on/</guid>
+      <description>AKA TAM day 2 for me, I’d got so many TAM sessions planned that it was going to prove difficult to keep the step average up!
+TAM 3842 – VMware Cloud on AWS Wednesday morning saw me wake up to discover a session which I did not have on my calendar when I planned my sessions, although I was rather pleased to see it there, given that it was about #VMConAWS.</description>
+    </item>
+    
+    <item>
+      <title>VMware Europe 2016 Tuesday</title>
+      <link>/2016/10/25/vmware-europe-2016-tuesday-1-week-on/</link>
+      <pubDate>Tue, 18 Oct 2016 23:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/25/vmware-europe-2016-tuesday-1-week-on/</guid>
+      <description>This post will focus on the better part of the VMworld Tuesday, from both a time and an enjoyment perspective. Things didn&amp;rsquo;t start too well, I&amp;rsquo;d not gone to bed too late, but it seemed that I was party to Barcelona&amp;rsquo;s loudest ever relationship breakup which took place outside my window at about 4.30 AM, which meant that I failed to get to the vBreakfast for 7AM (sorry Fred, I definitely will make it one year!</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2016 TAM Day</title>
+      <link>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</link>
+      <pubDate>Mon, 17 Oct 2016 08:30:00 +0000</pubDate>
+      
+      <guid>/2016/10/24/vmworld-europe-2016-tam-day-1-week-on/</guid>
+      <description>Kicking off the conference in the best way possible is attendance at TAM day (or Partner day if that&amp;rsquo;s your thing). TAM day is a relatively structured day with a number of sessions and of course, that access to the other parts of VMworld which are open on the Monday. There&amp;rsquo;s a growing number of people arriving on the Monday who are neither TAM nor PEX attendees, but there&amp;rsquo;s other conference activities to keep them going too.</description>
+    </item>
+    
+    <item>
+      <title>New site launch - OpenHomelab</title>
+      <link>/2016/05/10/new-site-launch-openhomelab/</link>
+      <pubDate>Tue, 10 May 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/10/new-site-launch-openhomelab/</guid>
+      <description>If you have a Homelab or if you are thinking of constructing a Homelab, if you need to plan on a budget or want to know what everyone else is using, if you&amp;rsquo;ve wondered if you&amp;rsquo;re better off with a Cloudlab, but are not sure of the TCO involved, if you are studying for certifications, have a thirst for knowledge or just money to burn, then today sees the launch of a site designed just for you.</description>
+    </item>
+    
+    <item>
+      <title>Installing a vROps 6.2 Appliance</title>
+      <link>/2016/03/25/installing-a-vrops-6-2-appliance/</link>
+      <pubDate>Fri, 25 Mar 2016 19:20:00 +0000</pubDate>
+      
+      <guid>/2016/03/25/installing-a-vrops-6-2-appliance/</guid>
+      <description>A post to cover my initial fiddling with vRealise Operations Manager 6.2. Considering I have the vExpert licenses to play with, then installing and configuring some additional monitoring seems like a good idea, especially since the alerting and reporting tools that come baked in to vSphere itself are not that extensive. I&amp;rsquo;ve heard good things about this version of vROps, so let&amp;rsquo;s see how easy this is.
+Installing vROps is not difficult, since like most of the current generation of vSphere add-ons that VMware have released, there&amp;rsquo;s an appliance to use.</description>
+    </item>
+    
+    <item>
+      <title>vExpert 2016 - Community Edition</title>
+      <link>/2016/02/06/vexpert-2016-community-edition/</link>
+      <pubDate>Sat, 06 Feb 2016 01:28:00 +0000</pubDate>
+      
+      <guid>/2016/02/06/vexpert-2016-community-edition/</guid>
+      <description>Yesterday, VMware announced their list of vExperts for 2016 and I&amp;rsquo;m both proud and humbled to have been selected for the second time. I&amp;rsquo;m standing on the shoulders of giants here, as a lot of the people that I have been inspired by and/or helped by over my years in the VMware community are recognised as vExperts again this year, alongside some new faces. Many folks have been vExperts for a long time and their continued dedication to the VMware ecosystem and generosity with their time is rightly recognised.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Monday - TAM Day</title>
+      <link>/2015/10/12/vmworld-monday-tam-day/</link>
+      <pubDate>Mon, 12 Oct 2015 23:13:00 +0000</pubDate>
+      
+      <guid>/2015/10/12/vmworld-monday-tam-day/</guid>
+      <description>Dell EMC Yeah, I know, Dell buys EMC for a proper Doctor Evil amount of money, on top of the billions it already owed the banks and VC guys who helped it to go private last year, but like I say, a debt is just a bunch of numbers on a piece of paper until someone actually calls it in. So whatever. VMware is still independent, just as it was last week, so we all have to wait to see just how this shakes out.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe 2015 Sunday</title>
+      <link>/2015/10/11/vmworld-euope-sunday/</link>
+      <pubDate>Sun, 11 Oct 2015 22:22:00 +0000</pubDate>
+      
+      <guid>/2015/10/11/vmworld-euope-sunday/</guid>
+      <description>Ok, so first things first, I don&amp;rsquo;t know what day this is, day 1, day 0 or day -1, so it will have to stay as Sunday. That means flying to VMworld Europe day, a number of hours spent in transit, by now the normal Airbnb approach to staying in Barcelona, considering that basically all I will do in this apartment is sleep and shower. OK, and blog.
+It&amp;rsquo;s only a couple of hours from Gatwick to Barcelona, but today&amp;rsquo;s transport involved car, train, plane, taxi, taxi, feet, which would have been a lot worse had I not been able to sponge lifts off of unnamed people&amp;rsquo;s expenses :-) You have to love this community.</description>
+    </item>
+    
+    <item>
+      <title>Initial CloudLab environment creation with Ravello</title>
+      <link>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</link>
+      <pubDate>Thu, 20 Aug 2015 20:35:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/initial-cloudlab-environment-creation-with-ravello/</guid>
+      <description>Once you have created an account with Ravello and Uploaded some images, then it is time to start building a lab environment on someone else&amp;rsquo;s cloud. If you&amp;rsquo;ve not signed up for a Ravello account, then you can do that here and if you&amp;rsquo;ve not read my first article in this series, then you should go here. I&amp;rsquo;ll wait.
+So, to get started you&amp;rsquo;ll need to create an empty, cloud optimised, ESXi application and then install ESXi within it.</description>
+    </item>
+    
+    <item>
+      <title>Ravello announce the General Availability of InceptionSX</title>
+      <link>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</link>
+      <pubDate>Thu, 20 Aug 2015 07:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/20/ravello-announce-the-general-availability-of-inceptionsx/</guid>
+      <description>Background Ravello Systems was founded in early 2011 by the same people who created the KVM hypervisor. Rami Tamir is the CEO and he took an invited audience of vExperts through a preview of Ravello InceptionSX on a pre-launch briefing early in August 2015.
+The Ravello Systems mission statement is to provide Cloud Economics (Pay as you go, on demand, endless capacity at commodity prices) for All Workloads across All Environments while Maintaining SLAs, Tools, Security etc.</description>
+    </item>
+    
+    <item>
+      <title>VMworld Europe Session picks</title>
+      <link>/2015/08/18/vmworld-europe-session-picks/</link>
+      <pubDate>Tue, 18 Aug 2015 20:22:00 +0000</pubDate>
+      
+      <guid>/2015/08/18/vmworld-europe-session-picks/</guid>
+      <description>So, the VMworld Europe schedule builder opened up today and some of the sessions are already full up. Scary. Almost every guided lab session was full up by lunchtime on day 1, I wonder if the same folks got in to all of them, quite likely!
+This is the list I am thinking of at the moment. I am sure this will get turned on it&amp;rsquo;s head when more info comes out about TAM Customer Central, additional sessions get announced after the releases announced at VMworld US and I&amp;rsquo;ll need time to take a look at the solutions exchange and talk toa ll the clever folks around the place.</description>
+    </item>
+    
+    <item>
+      <title>Time for a Cloud Lab</title>
+      <link>/2015/08/16/time-for-a-cloud-lab/</link>
+      <pubDate>Sun, 16 Aug 2015 21:04:00 +0000</pubDate>
+      
+      <guid>/2015/08/16/time-for-a-cloud-lab/</guid>
+      <description>Those lovely people over at Ravello Systems have given all of the current vExperts access to their nested virtualisation offering, so each month I have some free hours to run the equivalent of a homelab, but it&amp;rsquo;s located somewhere out on AWS or Google, fronted by the clever Ravello interface. This should allow me to test out a whole bunch of things that are difficult to set up on a home lab, so I can keep the on premises stuff for running my production and put my dev / test in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 6 - vCenter Configuration</title>
+      <link>/2015/03/17/vexpert-homelab-6-vcenter-configuration/</link>
+      <pubDate>Tue, 17 Mar 2015 00:13:00 +0000</pubDate>
+      
+      <guid>/2015/03/17/vexpert-homelab-6-vcenter-configuration/</guid>
+      <description>So, you&amp;rsquo;ve got a nice new vCenter 6 up and running, maybe you have an external PSC as well? Jolly good! Now what?
+There&amp;rsquo;s a whole bunch of additional configuration items that you should look at amending before too long. Log in as your SSO Admin account - administrator@vsphere.local (or whatever you changed it to during the installation) and away we go.
+Let&amp;rsquo;s start with something new - the Download Remote Console option.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 5 - ESXi 6.0 - Nuc Nuc Nuc</title>
+      <link>/2015/03/14/vexpert-homelab-5-esxi-6-0-nuc-nuc-nuc/</link>
+      <pubDate>Sat, 14 Mar 2015 18:04:00 +0000</pubDate>
+      
+      <guid>/2015/03/14/vexpert-homelab-5-esxi-6-0-nuc-nuc-nuc/</guid>
+      <description>It was time to replace my old workhorse HP ML115&amp;rsquo;s with some new kit ready for the vSphere 6 launch and given the amount of commentary around the community at large I decided to take the plunge and source a bunch of Intel NUC devices, namely the D54250WYK model.
+No point doing things by halves, so I got three* and stuck 16GB memory in each, which should give me enough room to build a decent lab!</description>
+    </item>
+    
+    <item>
+      <title>Synology DSM 5.2 Beta will run Docker containers</title>
+      <link>/2015/03/13/synology-dsm-5-2-beta-will-run-docker-containers/</link>
+      <pubDate>Fri, 13 Mar 2015 14:57:00 +0000</pubDate>
+      
+      <guid>/2015/03/13/synology-dsm-5-2-beta-will-run-docker-containers/</guid>
+      <description>Synology have announced their latest beta this week. DSM 5.2 Beta now gives you the abilty to run Docker Containers natively.
+This will be interesting for a bunch of vExperts, who use these devices. After I get vSphere 6.0 bedded in, I imagine that I will be looking at the option that this presents where I will be able to have a Docker implementation within the vSphere environment and play with the portability options by shifting them in and out of the Synology.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 4 - Installing a vCenter 6 VCSA using an external PSC</title>
+      <link>/2015/03/13/vexpert-homelab-4-installing-a-vcenter-6-vcsa-using-an-external-psc/</link>
+      <pubDate>Fri, 13 Mar 2015 02:07:00 +0000</pubDate>
+      
+      <guid>/2015/03/13/vexpert-homelab-4-installing-a-vcenter-6-vcsa-using-an-external-psc/</guid>
+      <description>Following directly on from my previous post where I install a PSC, it&amp;rsquo;s time for a vCenter. There&amp;rsquo;s not a lot of point having one without the other. The webpage I used to install the PSC is still open so I can just click on Install again and accept the EULA again and it is right back to the connecting to target server options once more.
+The same options as last time for this.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 3 - Installing vCenter 6 as a PSC</title>
+      <link>/2015/03/12/vexpert-homelab-3-installing-vcenter-6-as-a-psc/</link>
+      <pubDate>Thu, 12 Mar 2015 23:25:00 +0000</pubDate>
+      
+      <guid>/2015/03/12/vexpert-homelab-3-installing-vcenter-6-as-a-psc/</guid>
+      <description>So at last, vSphere 6 release day. Let&amp;rsquo;s crack on with this new PSC stuff! vSphere 6.0 splits vCenters into a Platform Services Controller piece (SSO, licensing, Certificates - all the bits that really tie your setup together) and the vCenter installation itself. These can be on the same server (VM, right?) or different servers, creating stand-alone PSC&amp;rsquo;s which can be load balanced and so on.
+The vCenter Deployment Guide has been available for a few days already and that is really a step by step guide through the installations that you can do.</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 2 - More Cisco 3550 Config</title>
+      <link>/2015/03/12/vexpert-homelab-2-more-cisco-3550-config/</link>
+      <pubDate>Thu, 12 Mar 2015 23:20:00 +0000</pubDate>
+      
+      <guid>/2015/03/12/vexpert-homelab-2-more-cisco-3550-config/</guid>
+      <description>After setting up the basics of a Cisco 3550 in the previous blog in this series, it is time to carry out the more advanced setup. Here I&amp;rsquo;ll step through some of the options that are good to set up if you want to run a vSphere homelab on one of this type of switch. Ideally, you will want one which is L3 capable so routes as well as switches (the 3550 series is one of those oddities that can be L2 only or L3 as well, depending on the age or model).</description>
+    </item>
+    
+    <item>
+      <title>vExpert Homelab 1 - Setting up a Cisco 3550 switch from scratch</title>
+      <link>/2015/02/14/vexpert-homelab-1-setting-up-a-cisco-3550-switch-from-scratch/</link>
+      <pubDate>Sat, 14 Feb 2015 22:42:00 +0000</pubDate>
+      
+      <guid>/2015/02/14/vexpert-homelab-1-setting-up-a-cisco-3550-switch-from-scratch/</guid>
+      <description>I&amp;rsquo;ve been running a homelab for a number of years, but with the impending release of vSphere 6, my pair of old HP ML115 servers were looking a little tired. After being selected as a vExpert in 2015, I figured it was time to treat myself to some new infrastructure and also to rig up a proper network solution to underpin it all. I&amp;rsquo;d had an old Cisco 3550 (the layer 3 version) hanging around for a while waiting for this moment.</description>
+    </item>
+    
+    <item>
+      <title>vExpert 2015</title>
+      <link>/2015/02/05/vexpert-2015/</link>
+      <pubDate>Thu, 05 Feb 2015 22:10:00 +0000</pubDate>
+      
+      <guid>/2015/02/05/vexpert-2015/</guid>
+      <description>Well, well, well. I&amp;rsquo;m pleased to say that I have been awarded the title of VMware vExpert for 2015, my first time! You can see the full list here on the VMTN site. Congratulations to all the new and returning vExperts named this year.
+It&amp;rsquo;s rather humbling to gain this recognition and it really is great to see so many of the #LonVMUG folks who&amp;rsquo;ve helped me along the way be named as well.</description>
+    </item>
+    
+  </channel>
+</rss>

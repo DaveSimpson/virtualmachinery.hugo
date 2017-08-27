@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feed4ward on VirtualMachinery</title>
+    <link>/tags/feed4ward/</link>
+    <description>Recent content in Feed4ward on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Feb 2015 13:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/feed4ward/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Speaking at January&#39;s LonVMUG</title>
+      <link>/post/2015-02-19-about-speaking-at-januarys-lonvmug/</link>
+      <pubDate>Thu, 19 Feb 2015 13:56:00 +0000</pubDate>
+      
+      <guid>/post/2015-02-19-about-speaking-at-januarys-lonvmug/</guid>
+      <description>Ask people what their fears are and with the overwhelming majority, you&amp;rsquo;ll get to public speaking sooner rather than later. Most people would rather do almost anything else, so to go and present to a room full of technical experts and be judged by them all, when you could just sit back and listen to someone else, in blissful anonymity? Well, surely there&amp;rsquo;s no decision to be made? As a consequence, it&amp;rsquo;s no surprise that the erstwhile LonVMUG ctte.</description>
+    </item>
+    
+    <item>
+      <title>LonVMUG January 22nd 2015 - vFactor, vBeers and more</title>
+      <link>/2015/01/17/lonvmug-january-22nd-2015-vfactor-vbeers-and-more/</link>
+      <pubDate>Sat, 17 Jan 2015 19:42:00 +0000</pubDate>
+      
+      <guid>/2015/01/17/lonvmug-january-22nd-2015-vfactor-vbeers-and-more/</guid>
+      <description>It&amp;rsquo;s nearly time for the first #LonVMUG of 2015. As usual, a cracking line-up has been finalised for this all-day event, but for myself and 4 other delegates, this will be an extra special day, cos we get to present!
+Long-time LonVMUG stalwart Mike Laverick put together a #Feed4ward initiative in cahoots with
+Duncan Epping and Scott Lowe as an attempt to solicit more community content at VMUGs around the world by mentoring would be presenters before their big day in front of an audience.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on VirtualMachinery</title>
+    <link>/tags/cloud/</link>
+    <description>Recent content in Cloud on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Nov 2016 08:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thoughts around VMware on AWS - #vDM30in30</title>
+      <link>/2016/11/04/thoughts-around-vmware-on-aws-vdm30in30/</link>
+      <pubDate>Fri, 04 Nov 2016 08:55:00 +0000</pubDate>
+      
+      <guid>/2016/11/04/thoughts-around-vmware-on-aws-vdm30in30/</guid>
+      <description>It seems like everyone and his dog has written a post about this already, so here&amp;rsquo;s mine.
+The biggest buzz at VMworld Europe was actually about an announcement that came out the week before, which is quite something, considering that a lot of nice announcements were made over the duration of the show as a whole. If you&amp;rsquo;ve been living under a rock for a while, VMware and AWS are planning to co-operate so that by the middle of next year you can run your VMware VM&amp;rsquo;s natively on the AWS cloud.</description>
+    </item>
+    
+  </channel>
+</rss>

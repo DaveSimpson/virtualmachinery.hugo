@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vbeers on VirtualMachinery</title>
+    <link>/tags/vbeers/</link>
+    <description>Recent content in Vbeers on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jul 2013 19:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vbeers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LonVMUG, vBeers and a vCurry!</title>
+      <link>/2013/07/05/lonvmug-vbeers-and-a-vcurry/</link>
+      <pubDate>Fri, 05 Jul 2013 19:42:00 +0000</pubDate>
+      
+      <guid>/2013/07/05/lonvmug-vbeers-and-a-vcurry/</guid>
+      <description>Wow! I nearly didn&amp;rsquo;t make it. A particularly &amp;ldquo;late one at the office&amp;rdquo; the night before saw me get to bed just short of 4am, with the prospect of a couple of hours train journey for a 9 something LonVMUG start. So, forget all about starting the day at 6am then.
+The late start to the day turned out to be particularly gutting as the Twitter chat around the event pretty much ceased whilst Frank Dennerman was doing his presentation, so I was pretty miffed that I didn&amp;rsquo;t catch it live as it was obviously getting everyone&amp;rsquo;s attention.</description>
+    </item>
+    
+  </channel>
+</rss>

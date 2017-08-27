@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openhomelab on VirtualMachinery</title>
+    <link>/tags/openhomelab/</link>
+    <description>Recent content in Openhomelab on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 May 2016 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/openhomelab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New site launch - OpenHomelab</title>
+      <link>/2016/05/10/new-site-launch-openhomelab/</link>
+      <pubDate>Tue, 10 May 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/10/new-site-launch-openhomelab/</guid>
+      <description>If you have a Homelab or if you are thinking of constructing a Homelab, if you need to plan on a budget or want to know what everyone else is using, if you&amp;rsquo;ve wondered if you&amp;rsquo;re better off with a Cloudlab, but are not sure of the TCO involved, if you are studying for certifications, have a thirst for knowledge or just money to burn, then today sees the launch of a site designed just for you.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usercon on VirtualMachinery</title>
+    <link>/tags/usercon/</link>
+    <description>Recent content in Usercon on VirtualMachinery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Nov 2016 09:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/usercon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>UK VMUG UserCon - Community Focus - #vDM30in30</title>
+      <link>/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/</link>
+      <pubDate>Thu, 10 Nov 2016 09:30:00 +0000</pubDate>
+      
+      <guid>/2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/</guid>
+      <description>We&amp;rsquo;re now a mere week away from the VMUG UK UserCon on 17th November, but there is still time toregister ahead the day itself. You should also remember that you can simply turn up on the day, as always. We&amp;rsquo;ll be happy to see you either way. If you want to come to the vCurry the night before (7PM - 9PM, in the Premier Suite at the Motorcycle Museum) then it&amp;rsquo;s best to pre-register for that so we know how many people want feeding.</description>
+    </item>
+    
+    <item>
+      <title>UK VMUG UserCon, November 17th! #vDM30in30</title>
+      <link>/2016/11/03/uk-vmug-usercon-november-17th-vdm30in30/</link>
+      <pubDate>Thu, 03 Nov 2016 09:00:00 +0000</pubDate>
+      
+      <guid>/2016/11/03/uk-vmug-usercon-november-17th-vdm30in30/</guid>
+      <description>In just a couple of weeks, I&amp;rsquo;ll be attending my fourth UK VMUG UserCon, which is set to be the biggest VMUG event in the UK this year. As usual, the UserCon is being held at the National Motorcycle Museum, close to the NEC and Birmingham Airport. This years date for the diary is Thursday 17th November. With the demise of the physical vForum event, this should be the biggest VMware related gathering in the UK this year.</description>
+    </item>
+    
+  </channel>
+</rss>
