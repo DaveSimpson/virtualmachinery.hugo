@@ -1,5 +1,11 @@
 ---
-title: "2017 08 26 Discuss Disqus"
-date: 2017-08-27T16:04:47+01:00
+author: Dave Simpson
+date: 2017-08-27T16:13:00+01:00
 draft: true
+title: 'Discuss Disqus'
+description = ""
+categories:
+- Posts
+tags = [blog]
+thumbnail = "img/"
 ---
