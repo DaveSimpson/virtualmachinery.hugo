@@ -6,6 +6,6 @@ title: 'Discuss Disqus'
 description: ""
 categories:
 - Posts
-tags = [blog]
-thumbnail = "img/"
+tags: [blog]
+thumbnail: "img/"
 ---

@@ -6,6 +6,6 @@ title: '{{ replace .TranslationBaseName "-" " " | title }}'
 description: ""
 categories:
 - Posts
-tags = [blog]
-thumbnail = "img/"
+tags: [blog]
+thumbnail: "img/"
 ---
