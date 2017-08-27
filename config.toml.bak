@@ -1,5 +1,5 @@
 baseurl = "/"
-#baseURL = "http://www.virtualmachinery.co.uk/"
+#baseURL = "https://www.virtualmachinery.co.uk/"
 title = "VirtualMachinery"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
