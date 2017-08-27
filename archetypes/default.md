@@ -3,7 +3,7 @@ author: Dave Simpson
 date: {{ .Date }}
 draft: true
 title: '{{ replace .TranslationBaseName "-" " " | title }}'
-description = ""
+description: ""
 categories:
 - Posts
 tags = [blog]
