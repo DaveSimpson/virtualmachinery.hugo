@@ -1,11 +1,28 @@
 ---
 author: Dave Simpson
-date: 2017-08-28T03:07:18+01:00
-draft: true
-title: 'Vmware Vcp550d Delta Exam for Vcp5 Dcv Holders'
-description: ""
+date: 2014-10-02 22:40:00+00:00
+draft: false
+title: VMware VCP550D 'delta' exam for VCP5-DCV holders
+type: post
 categories:
 - Posts
-tags: [blog]
-thumbnail: "img/"
+thumbnail: "img/20141002vcp-dcv.png"
+description: "VMware introduce VCP550D exam to ease recertification pain."
+tags: [VMware,Certification]
 ---
+
+A couple of days ago, VMware announced that they would offer existing VCP5-DCV certified folks a shortcut to extending their certification, by introducing a [new delta exam](http://mylearn.vmware.com/mgrReg/plan.cfm?plan=51919&ui=www_cert). The new test is a [Pearson Vue delivered test](http://www.pearsonvue.com/vmware/activity/index_en.asp) as you would expect and has the code VCP550D. The exam is the same duration (75 minutes) and length (65 questions) as the normal VCP5 exam, but it is taken remotely like the introductory level VCA exams and is also considerably cheaper than the full exam, at £80. Delegates only have until the end of November to take the exam and once you sign up and pay for your exam, you only have a couple of days to take the test.  
+  
+The content is described as being the new material released between vSphere 5.0/5.1 and vSphere 5.5.  That's somewhat confusing as there are 65 questions to get through and the presence of 5.1 there is possibly superfluous, as I assume it's differences between 5.0 and 5.5 in reality. Also, the [exam blueprint](http://mylearn.vmware.com/lcms/web/portals/certification/VCP_Blueprints/VCP550D-Exam-Blueprint-v1_0.pdf) you are pointed to is in reality the standard 5.5 exam blueprint!  
+  
+I say kudos to VMware for providing a cheaper means to recertify for those people who only hold a VCP5-DCV cert and don't yet want to undertake a VCAP or have exposure to cloud, horizon or network virtualisation. A lot of people will see their VCP5-DCV certification expire early in 2015 and there won't be another version of vSphere out in time to have a VCP6-DCV exam in place. This basically buys a chunk of VCPs the best part of two years before any recertification issues crop up again. It's an utterly pointless gesture for other people of course. I fell somewhere in the middle ground as I had to do something to avoid becoming uncertified and that was originally going to be a stab at the VCP-Cloud IaaS exam, using the Hands on Labs to help me thought the blueprint, as I don't use a cloud in my day job. This seemed to be an easier option.  
+  
+Those of you watching tenses will guess that I have dealt with this situation and you'd be right. I took the exam this evening and passed, with a 380. Now I have 2 years to get my act together and deal with exams I really want to look at and this will either be VCP-NV or VCAP-DCD (or both). It could be that I don't take a other VCP-DCV exam for quite a long time!  
+  
+If I am honest, the exam was pretty tough, as I was not really sure what the content would be. I did not expect many 'gimme' questions either compared to the 5.0 exam, as there wouldn't be any questions on topics that have been in vSphere since version 2 that everyone knows backwards. I did find it interesting that there is no mention of open book like the VCA or closed book, like the full VCP5, so this may be interpreted as a bit of a dumbing down of the exam, but of course to qualify for the delta exam, you had to pass previously in a test centre. There's no way you will just pass this using Google or the vSphere online manuals if you've been doing something other than vSphere for the past 2 years, as you have just over a minute per question. You have to know your stuff, even if you are not in the test centre for this exam. This exam was nothing like the VCA-DCV (as you'd expect).   
+  
+I passed the 3.5 exam after attending the 3.0 course and the 5.0 exam _before_ attending the optimise and scale course, so I am used to assembling my own cram content and as such, always look in to the new products that plug in to the current vSphere suite. I guessed that VSOM and the other different ways you can buy vSphere these days would figure today, since they were not in my 5.0 exam. Previously, I focused on the differences between standard and distributed switches and the associated teaming, shaping features etc. and looked over NFS and iSCSI since I don't really run those (we use 1000v at work too, which doesn't always help). That approach worked for 5.0 so I assumed that 5.5 would be no different. I also relied on some of the content I have been reading recently (good job I bought the VSAN and Networking for vSphere Admins books recently for instance, since some of that is still fresh in my mind). Before starting the exam, whilst making a brew, I had a quick think on the differences between the web client and the c# client as all the new features are web client only of course. That was about it. It was just enough.   
+  
+There were some questions that I had absolutely no idea about at all but to be honest, I'm not sure I would have known what those answers would be if I had studied and crammed for weeks. There were some multi choice questions where 2 answers were clearly wrong or just _felt_ wrong - I guess that using VMware every working day for years does help! Since I always read right through every question a couple of times to see what they're really asking, even if I think I know the answer, then I did not have a lot of time to spare - in fact my time ran out whilst I was rereading the last question I still had marked for review!  
+  
+I'll be interested to hear how other people get on with this exam and if they decide to take it or not. I found this exam to be useful as I am going to be pretty busy till Christmas and now I can focus on something new for getting certified next year.
