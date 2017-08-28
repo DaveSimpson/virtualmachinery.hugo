@@ -4,7 +4,6 @@ date: 2016-11-04 08:55:00+00:00
 draft: false
 title: 'Thoughts around VMware on AWS - #vDM30in30'
 type: post
-url: /2016/11/04/thoughts-around-vmware-on-aws-vdm30in30/
 categories:
 - Posts
 - vDM30in30

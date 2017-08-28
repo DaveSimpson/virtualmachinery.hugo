@@ -4,7 +4,6 @@ date: 2016-11-11 15:23:00+00:00
 draft: false
 title: 'Away at MidCon #vDM30in30'
 type: post
-url: /2016/11/11/away-at-midcon-vdm30in30/
 categories:
 - Posts
 - vDM30in30
@@ -37,4 +36,5 @@ Lots of other games get played at _Mid_**Con** too, Diplomacy is now merely a si
 
 Terraforming Mars (with beer)
   
+
 

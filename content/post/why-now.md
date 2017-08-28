@@ -4,7 +4,6 @@ date: 2013-05-24 17:18:00+00:00
 draft: false
 title: Why Now?
 type: post
-url: /2013/05/24/why-now/
 categories:
 - Posts
 thumbnail: "img/20130524cloudcred.jpg"

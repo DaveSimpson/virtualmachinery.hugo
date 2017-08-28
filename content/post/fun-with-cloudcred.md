@@ -4,7 +4,6 @@ date: 2016-11-09 09:00:00+00:00
 draft: false
 title: 'Fun with CloudCred! #vDM30in30'
 type: post
-url: /2016/11/09/fun-with-cloudcred-vdm30in30/
 categories:
 - Posts
 - vDM30in30

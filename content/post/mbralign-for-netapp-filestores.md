@@ -4,7 +4,6 @@ date: 2013-06-06 15:20:00+00:00
 draft: false
 title: mbralign for NetApp filestores
 type: post
-url: /2013/06/06/mbralign-for-netapp-filestores/
 categories:
 - Posts
 thumbnail: "img/20130606netapp.png"

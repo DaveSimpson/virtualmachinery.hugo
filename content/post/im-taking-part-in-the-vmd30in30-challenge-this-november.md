@@ -4,7 +4,6 @@ date: 2016-11-01 08:55:00+00:00
 draft: false
 title: 'I''m taking part in the #vDM30in30 Challenge this November'
 type: post
-url: /2016/11/01/im-taking-part-in-the-vdm30in30-challenge-this-november/
 categories:
 - Posts
 - vDM30in30

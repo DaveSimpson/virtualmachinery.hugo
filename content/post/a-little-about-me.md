@@ -4,7 +4,6 @@ date: 2016-11-09 01:00:00+00:00
 draft: false
 title: 'A little about me - #vDM30in30'
 type: post
-url: /2016/11/09/a-little-about-me-vdm30in30/
 categories:
 - Posts
 - vDM30in30

@@ -4,7 +4,6 @@ date: 2013-07-05 19:42:00+00:00
 draft: false
 title: LonVMUG, vBeers and a vCurry!
 type: post
-url: /2013/07/05/lonvmug-vbeers-and-a-vcurry/
 categories:
 - Posts
 thumbnail: "img/20130705vmug.png"

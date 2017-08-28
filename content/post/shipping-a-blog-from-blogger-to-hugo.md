@@ -4,7 +4,6 @@ date: 2017-08-23 20:23:00+00:00
 draft: false
 title: 'Shipping a blog from Blogger to Hugo'
 type: post
-url: /2017/08/23/ship-blog-from-blogger-to-hugo/
 categories:
 - Posts
 description: "Trials and tribulations of moving a blog site from Blogger to Hugo (via wordpress!)"

@@ -1,10 +1,9 @@
 ---
 author: Dave Simpson
-date: 2016-11-10 09:30:00+00:00
+date: 2016-11-10 10:01:00+00:00
 draft: false
 title: 'UK VMUG UserCon - Community Focus - #vDM30in30'
 type: post
-url: /2016/11/10/uk-vmug-usercon-community-focus-vdm30in30/
 categories:
 - Posts
 - vDM30in30

@@ -1,10 +1,9 @@
 ---
-author: bfddiplomacy
+author: Dave Simpson
 date: 2016-11-03 09:00:00+00:00
 draft: false
 title: 'UK VMUG UserCon, November 17th! #vDM30in30'
 type: post
-url: /2016/11/03/uk-vmug-usercon-november-17th-vdm30in30/
 categories:
 - Posts
 - vDM30in30

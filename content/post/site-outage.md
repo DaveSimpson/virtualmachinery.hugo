@@ -3,9 +3,7 @@ author: Dave Simpson
 date: 2016-11-06 10:00:00+00:00
 draft: false
 title: 'Site Outage - #vDM30in30'
-#linktitle: 'Site Outage - #vDM30in30'
 type: post
-url: /2016/11/06/site-outage-vdm30in30/
 categories: 
 - Posts
 - vDM30in30

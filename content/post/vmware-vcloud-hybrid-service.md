@@ -4,7 +4,6 @@ date: 2013-05-24 17:54:00+00:00
 draft: false
 title: VMware vCloud Hybrid Service
 type: post
-url: /2013/05/24/vmware-vcloud-hybrid-service/
 categories:
 - Posts
 thumbnail: "img/20130524vchs.jpg"

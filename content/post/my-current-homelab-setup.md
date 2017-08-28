@@ -4,7 +4,6 @@ date: 2016-11-02 09:00:00+00:00
 draft: false
 title: My Current Homelab Setup
 type: post
-url: /2016/11/02/my-current-homelab-setup/
 categories:
 - Posts
 - Homelab

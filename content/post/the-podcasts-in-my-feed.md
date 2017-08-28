@@ -4,7 +4,6 @@ date: 2016-11-07 09:00:00+00:00
 draft: false
 title: 'The Podcasts in my Feed - #vDM30in30'
 type: post
-url: /2016/11/07/the-podcasts-in-my-feed-vdm30in30/
 categories:
 - Posts
 - vDM30in30
