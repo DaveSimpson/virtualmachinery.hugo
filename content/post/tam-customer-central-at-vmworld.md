@@ -4,7 +4,6 @@ date: 2016-11-05 10:00:00+00:00
 draft: false
 title: 'TAM Customer Central at VMworld for #vDM30in30'
 type: post
-vdm30in30/
 categories:
 - Posts
 - vDM30in30
