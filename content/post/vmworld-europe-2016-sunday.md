@@ -4,7 +4,6 @@ date: 2016-10-16 23:55:00+00:00
 draft: false
 title: VMworld Europe 2016 Sunday
 type: post
-url: /2016/10/23/vmworld-europe-2016-sunday-1-week-on/
 categories:
 - Posts
 - VMworld

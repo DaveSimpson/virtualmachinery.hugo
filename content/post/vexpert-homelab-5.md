@@ -7,7 +7,7 @@ type: post
 categories:
 - Posts
 - Homelab
-thumbnail: "img/img/20161102nucgen5.png"
+thumbnail: "img/20161102nucgen5.png"
 description: "Should I name these servers Curly, Moe and Larry?"
 tags: [Homelab,vExpert,NUC,vSphere]
 ---

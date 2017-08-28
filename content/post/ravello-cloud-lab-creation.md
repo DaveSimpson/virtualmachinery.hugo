@@ -3,7 +3,6 @@ author: Dave Simpson
 date: 2015-08-20 20:35:00+00:00
 draft: false
 type: post
-url: /2015/08/20/initial-cloudlab-environment-creation-with-ravello/
 categories:
 - Posts
 thumbnail: "img/20150820ravello.png"
