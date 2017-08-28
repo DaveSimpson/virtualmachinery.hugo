@@ -1,7 +1,7 @@
 ---
 author: Dave Simpson
 date: 2017-08-28T16:51:40+01:00
-draft: true
+draft: false
 title: 'VMworld 2017 Monday General Session'
 description: "Notes and background from the keynote presentation"
 categories:
