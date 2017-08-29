@@ -12,7 +12,7 @@ thumbnail: "img/"
 
 It's been about a week since I decided to shift my site from Blogger to using static pages hosted on AWS with Hugo as the means to develop it. In that time, I've
 - started writing pages using markdown, I'd never used it before
-- finally got to grips with Git to track all my changes locally (I also have the option to put my code in github / AWS)
+- finally got to grips with Git to track all my changes locally (I also have the option to put my code in GitHub / AWS)
 - converted all my web pages to markdown, from blogger, via wordpress
 - changed image locations
 - added a new #LonVMUG based blogroll
