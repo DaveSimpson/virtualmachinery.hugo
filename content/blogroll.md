@@ -27,6 +27,7 @@ _London VMUG is a literal hotbed of vExpert Bloggers. Instead of just listing al
 - [Gareth Edwards - Virtualised Fruit](http://www.virtualisedfruit.co.uk/ "Yet another fruity blog taking a byte into virtualisation")
 - [Alex Galbraith - Tekhead](http://tekhead.it/blog/ "It's all about the WAF") 
 - [Simon Gallagher - vinf.net](https://vinf.net/ "Virtualization, Cloud, Infrastructure and all that 'stuff' in-between") 
+- [Ryan Harris - vRyan.co.uk](http://www.vryan.co.uk/ "VMware Certified Infrastructure Engineer")
 - [Kev Johnson - V-IT.PRO](http://v-it.pro/ "Confessions of a Northern Technology Wrangler")
 - [Christopher Lewis - thecloudxpert](https://thecloudxpert.net/ "virtualisation | cloud | automation | orchestration")
 - [Stu McHugh's Thoughs](http://www.stumchugh.com/ "Also check out the podcast at: http://feeds.feedburner.com/vNewsPodcast")
