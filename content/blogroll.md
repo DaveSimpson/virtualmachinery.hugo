@@ -25,6 +25,7 @@ _London VMUG is a literal hotbed of vExpert Bloggers. Instead of just listing al
 - [Mark Brookfield - virtualhobbit](https://virtualhobbit.com "Big IT, Hobbit sized")
 - [Simon Eady / Sam McGeown - DefinIT](https://www.definit.co.uk/ "2 authors, but only 1 entry on this list!")
 - [Gareth Edwards - Virtualised Fruit](http://www.virtualisedfruit.co.uk/ "Yet another fruity blog taking a byte into virtualisation")
+- [Ricky El-Qasem - Cloud Native Planet](http://blog.cloudnativeplanet.com/ "From the man who brought you virtualizeplanet.com")
 - [Alex Galbraith - Tekhead](http://tekhead.it/blog/ "It's all about the WAF") 
 - [Simon Gallagher - vinf.net](https://vinf.net/ "Virtualization, Cloud, Infrastructure and all that 'stuff' in-between") 
 - [Ryan Harris - vRyan.co.uk](http://www.vryan.co.uk/ "VMware Certified Infrastructure Engineer")
