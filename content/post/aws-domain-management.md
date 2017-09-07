@@ -76,6 +76,6 @@ Follow the rest of the guide about adding the Lambda functionality as the second
 
 Phew! all that work was a precursor to this step. I needed to have somewhere for AWS to email when I ask it to set up an SSL cert and only at least one the five email addresses I mentioned above will suffice. 
 
-So, off to AWS Certificate Manager to request a free SSL Certificate. Another easy step, but bear in mind that if you want to have the option to use both www. and the naked domain version for your site URL, then when you request the cert, use *.domainname.com instead of www.domainname.com and you're good to go. 
+So, off to AWS Certificate Manager to request a free SSL Certificate. Another easy step, but bear in mind that if you want to have the option to use both www. and the naked domain version for your site URL, then when you request the cert, use *.domainname.com instead of www.domainname.com and you're good to go. Make sure you also add the naked domain.com, so you will need two entries, easy to do on AWS.
 
 You'll get an email asking you to verify that you requested this cert, click the link in the mail and within a few seconds, you should see that your cert request has been validated and your cert status is Issued. 
