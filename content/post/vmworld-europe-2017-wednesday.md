@@ -1,9 +1,9 @@
 ---
 author: Dave Simpson
 date: 2017-09-13T08:04:07+01:00
-draft: true
+draft: false
 title: 'VMworld Europe 2017 Wednesday'
-description: ""
+description: "My experience at VMworld Europe 2017 on the Wednesday"
 categories:
 - Posts
 - VMworld
