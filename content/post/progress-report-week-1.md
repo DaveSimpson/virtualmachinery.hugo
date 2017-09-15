@@ -7,15 +7,16 @@ description: "Progress made moving my website to a static site"
 categories:
 - Posts
 tags: [blog]
-thumbnail: "img/"
+thumbnail: "img/20170829progress.png"
 ---
 
-It's been about a week since I decided to shift my site from Blogger to using static pages hosted on AWS with Hugo as the means to develop it. In that time, I've
+It's been about a week since I decided to shift my site from Blogger to using static pages hosted on AWS with Hugo as the means to develop it. In that time, I've:
+
 - started writing pages using markdown, I'd never used it before
 - finally got to grips with Git to track all my changes locally (I also have the option to put my code in GitHub / AWS)
 - converted all my web pages to markdown, from blogger, via wordpress
 - changed image locations
-- added a new #LonVMUG based blogroll
+- added a new London VMUG based blogroll
 - incorporated the bits for disqus and google analytics
 
 The whole point of this exercise was to put myself on the bottom of a different learning curve and that has definitely worked. Infrastructure Engineers such as myself definitely need to pick up more coding skills, so it is probably well past the time that I should handle things like Git which have always been "for those developers, not us". The basics of Git are real easy, once you understand the basics you're all good. There's not a whole bunch of commands and other people have already documented the basics, but I might do that too, if there's time or demand, as if nothing else, a quick crib sheet works wonders. I generally learn best by doing or writing, if it's gone in my eyes, it has to go through my brain to get out of my hands through the keyboard or pen, so hopefully some of it sticks!
