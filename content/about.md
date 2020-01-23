@@ -1,6 +1,6 @@
 +++
 title = "About Me"
-date = "2017-08-23"
+date = "2020-01-23"
 menu = "main"
 +++
 
@@ -33,7 +33,7 @@ I'm also a home labber, which helps for those certifications and for trying to k
 This blog started out as a bit of fun to do with the [CloudCred] (https://www.cloudcredibility.com/) gameification site a few years ago and became a place for me to dump random occasional thoughts on things I was messing with in the lab or found interesting. I've kickstarted it several times since then, including this occasion (new decade) plus when I moved it to markdown and static pages just for fun and also as a participant in the 2016 [#vDM30in30] (http://discoposse.com/vdm30in30/), during a month where I was away from home organising conventions and the like. If I do that again, I'll have to be more organised in advance.
 
 ## More on me
-I'm married and live in Sussex, UK with my wife and our pack of half a dozen dogs. Fortunately they're all relatively small, so I can still get a seat on the sofa if I need one. I'm also a Diplomacy player and travel the world competing in various tournaments. I was European Grand Prix of Diplomacy Champion in 2012 and world team champion in 2015. My Twitter feed [@bfd_diplomacy] (https://twitter.com/bfd_diplomacy) does contain the worlds only virtualisation and Diplomacy crossover. I'm also getting involved with [Toastmasters] (https://www.toastmasters.org/) these days, which helps with speaking at VMUG events. 
+I'm married and live in Sussex, UK with my wife and our pack of half a dozen dogs. Fortunately they're all relatively small, so I can still get a seat on the sofa if I need one. I'm also a Diplomacy player and have traveled the world competing in various tournaments. I was European Grand Prix of Diplomacy Champion in 2012 and world team champion in 2015. My Twitter feed [@bfd_diplomacy] (https://twitter.com/bfd_diplomacy) does contain the worlds only virtualisation and Diplomacy crossover. I'm also getting involved with [Toastmasters] (https://www.toastmasters.org/) these days, which certainly helps with speaking at VMUG events. 
 
 ## Disclaimer
 The opinions stated upon this blog are mine alone and are not to be taken to be the opinion of the Travelers Companies Inc. Most of what I talk about is likely to have been messed with in my home lab or spun off from something else online, or something I attended in person, so you shouldn't infer that Travelers is specifically linked to that either, nor that Travelers owns or operates said stuff.

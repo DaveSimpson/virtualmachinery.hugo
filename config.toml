@@ -9,7 +9,7 @@ googleAnalytics = "UA-34254926-2" # Enable Google Analytics by entering your tra
 
 [Author] # Used in authorbox
     name = "Dave Simpson"
-    bio = "vExpert, London/UK VMUG Leader, Homelabber and amateur hack blogger."
+    bio = "VMUG Board Member, London VMUG Leader, Multi-year vExpert, Toastmaster, Homelabber and amateur hack blogger!"
     avatar = "img/avatar.png"
 
 [Params]
