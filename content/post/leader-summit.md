@@ -6,6 +6,6 @@ title: 'Leader Summit'
 description: ""
 categories:
 - Posts
-tags: [blog]
-thumbnail: "img/"
+tags: [VMUG, VMware]
+thumbnail: "img/vmug_leader.jpg"
 ---

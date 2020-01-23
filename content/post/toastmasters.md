@@ -6,6 +6,6 @@ title: 'Toastmasters'
 description: ""
 categories:
 - Posts
-tags: [blog]
-thumbnail: "img/"
+tags: [Personal Development, Toastmasters]
+thumbnail: "img/toastmasters.png"
 ---

@@ -6,6 +6,6 @@ title: 'Personal Development'
 description: ""
 categories:
 - Posts
-tags: [blog]
-thumbnail: "img/"
+tags: [Personal Development]
+thumbnail: "img/personal-development.jpg"
 ---
