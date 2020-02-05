@@ -1,6 +1,6 @@
 +++
 title = "About Me"
-date = "2020-01-23"
+date = "2020-02-01"
 menu = "main"
 +++
 
