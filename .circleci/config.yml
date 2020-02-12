@@ -40,7 +40,7 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
               aws s3 sync $HUGO_BUILD_DIR \
-              s3://my-static-site --delete
+              s3://virtualmachinery.co.uk?region=eu-west-2 --delete
             else
               echo "Not master branch, dry run only"
             fi
