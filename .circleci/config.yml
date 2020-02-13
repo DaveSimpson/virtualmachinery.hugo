@@ -2,22 +2,43 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
-    working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/public
+        - image: cibuilds/hugo:latest
+    working_directory: ~/project
     steps:
-      - run: apk update && apk add git
       - checkout
-      - run: git submodule sync && git submodule update --init
-      - run: curl -L https://github.com/bep/s3deploy/releases/download/v2.3.0/s3deploy_2.3.0_Linux-64bit.tar.gz | tar xvz
-      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
-      - run: htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html --empty-alt-ignore --disable-external
-      - deploy:
-          name: deploy
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run:
+          name: "Installing aws"
           command: |
-            if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              ./s3deploy -source=$HUGO_BUILD_DIR -region=eu-west-2 -bucket=virtualmachinery.co.uk -distribution-id=EIES6P0GNKOSY
-            else
-              echo "Not master branch, dry run only"
-            fi
+              # TODO Should have these setup correctly as (cached) dependencies
+              apk add --update py-pip python-dev
+              pip install awscli --upgrade --user
+      - run:
+          name: "Run Hugo"
+          command: hugo -v 
+      - run:
+          name: "Test Website"
+          command: htmlproofer src/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - deploy:
+          command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  # Copy over pages - not static js/img/css/downloads
+                  ~/.local/bin/aws s3 sync --acl "public-read" --sse "AES256" public/ s3://virtualmachinery.co.uk/ --exclude 'img' --exclude 'post'
+
+                  # Ensure static files are set to cache forever - cache for a month --cache-control "max-age=2592000"
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/img/ s3://virtualmachinery.co.uk/img/
+                  aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://virtualmachinery.co.uk/css/
+                  aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://virtualmachinery.co.uk/js/
+                  
+                  # Downloads binaries, not part of repo - cache at edge for a year --cache-control "max-age=31536000"
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=31536000" --acl "public-read" --sse "AES256" static/downloads/ s3://virtualmachinery.co.uk/downloads/
+
+                  # Invalidate landing page
+                  aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html /
+              fi
+
+
+
+
+
