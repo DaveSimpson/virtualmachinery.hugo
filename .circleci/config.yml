@@ -30,8 +30,8 @@ jobs:
                   # Ensure static files are set to cache forever - cache for a month --cache-control "max-age=2592000"
                   echo "Start Month Cache File Copies"
                   ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/img/ s3://virtualmachinery.co.uk/img/
-                  ~/.local/bin s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://virtualmachinery.co.uk/css/
-                  ~/.local/bin s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://virtualmachinery.co.uk/js/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://virtualmachinery.co.uk/css/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://virtualmachinery.co.uk/js/
                   
                   # Downloads binaries, not part of repo - cache at edge for a year --cache-control "max-age=31536000"
                   echo "Start Binary File Copies"
