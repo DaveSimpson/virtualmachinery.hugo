@@ -41,6 +41,6 @@ jobs:
                   echo "All Files Copied over" 
                   
                   # Invalidate landing page
-                  aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html / /page/*
-                  # aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /*
+                  ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html / /page/*
+                  # ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /*
               fi
