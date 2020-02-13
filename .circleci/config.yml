@@ -24,23 +24,33 @@ jobs:
           command: |
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
                   # Copy over pages - not static js/img/css/downloads
-                  echo "Start File Copies"
                   ~/.local/bin/aws s3 sync --acl "public-read" --sse "AES256" public/ s3://virtualmachinery.co.uk/ --exclude 'img' --exclude 'post'
 
                   # Ensure static files are set to cache forever - cache for a month --cache-control "max-age=2592000"
-                  echo "Start Month Cache File Copies"
                   ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/img/ s3://virtualmachinery.co.uk/img/
                   ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://virtualmachinery.co.uk/css/
                   ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://virtualmachinery.co.uk/js/
                   
                   # Downloads binaries, not part of repo - cache at edge for a year --cache-control "max-age=31536000"
-                  # echo "No Static Downloads!"
                   # ~/.local/bin/aws s3 sync --cache-control "max-age=31536000" --acl "public-read" --sse "AES256" static/downloads/ s3://virtualmachinery.co.uk/downloads/
 
-                  # run the `echo` command
-                  echo "All Files Copied over" 
-                  
                   # Invalidate landing page
                   ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html / /page/*
                   # ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /*
               fi
+              
+workflows:
+  version: 2
+  commit-workflow:
+    jobs:
+      - build 
+  scheduled-workflow:
+    triggers:
+      - schedule:
+          cron: "0 10,20 * * *"
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - build
