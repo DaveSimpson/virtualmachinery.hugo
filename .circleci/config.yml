@@ -1,46 +1,46 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine. See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:latest
-    working_directory: ~/hugo
-    environment:
-      HUGO_BUILD_DIR: ~/hugo/public
+        - image: cibuilds/hugo:0.56
+    working_directory: ~/project
     steps:
-
-      # install git
-      - run: apk update && apk add git
-
-      # checkout the repository
       - checkout
-
-      # install git submodules for managing third-party dependencies
-      - run: git submodule sync && git submodule update --init
-
+      - run: git submodule sync
+      - run: git submodule update --init
       - run:
-          name: install AWS CLI (first install pip, the Python package manager)
+          name: "Installing aws"
           command: |
-            apk add --update python python-dev py-pip build-base
-            pip install awscli
-
-      # build with Hugo
-      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
- 
+              # TODO Should have these setup correctly as (cached) dependencies
+              apk add --update py-pip python-dev
+              pip install awscli --upgrade --user
       - run:
-          name: test our generated HTML files
-          command: |
-            htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
-            --empty-alt-ignore --disable-external
-
-      # `deploy` step: identical to a `run` step, but uses only one container:
-      # /docs/2.0/configuration-reference/#deploy 
+          name: "Run Hugo"
+          command: hugo -v 
+#      - run:
+#          name: "Test Website"
+#          command: htmlproofer /root/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
       - deploy:
-          name: deploy to AWS
           command: |
-            if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync $HUGO_BUILD_DIR \
-              s3://virtualmachinery.co.uk?region=eu-west-2 --delete
-            else
-              echo "Not master branch, dry run only"
-            fi
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  # Copy over pages - not static js/img/css/downloads
+                  echo "Start File Copies"
+                  ~/.local/bin/aws s3 sync --acl "public-read" --sse "AES256" public/ s3://virtualmachinery.co.uk/ --exclude 'img' --exclude 'post'
+
+                  # Ensure static files are set to cache forever - cache for a month --cache-control "max-age=2592000"
+                  echo "Start Month Cache File Copies"
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/img/ s3://virtualmachinery.co.uk/img/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://virtualmachinery.co.uk/css/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://virtualmachinery.co.uk/js/
+                  
+                  # Downloads binaries, not part of repo - cache at edge for a year --cache-control "max-age=31536000"
+                  # echo "No Static Downloads!"
+                  # ~/.local/bin/aws s3 sync --cache-control "max-age=31536000" --acl "public-read" --sse "AES256" static/downloads/ s3://virtualmachinery.co.uk/downloads/
+
+                  # run the `echo` command
+                  echo "All Files Copied over" 
+                  
+                  # Invalidate landing page
+                  ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html / /page/*
+                  # ~/.local/bin/aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /*
+              fi

@@ -36,7 +36,7 @@ I've been the Toastmaster at a meeting too, the person who runs the whole meetin
 The good thing about all of this is that you can find your own favourite roles or tasks, challenge yourself when you want, or don't. There's no pressure, no timeline that you have to meet, other than maybe your own drive to progress!
 
 ## Confidence ##
-I've gained a lot of confidence doing all this public speaking and now I simply won't turn down an opportunity to talk, be it something planned or something ad-hoc. I've spoken at [London VMUG](https://community.vmug.com/communities/localcommunityhome?CommunityKey=0433de49-138a-4270-bc83-b64b8ea303a7), served as Kev Johnson's warm-up man at the London vSphere Upgrade Roadshow and have spoken at the VMUG Leader Gathering at VMworld Europe in the past few months.
+I've gained a lot of confidence doing all this public speaking and now I simply won't turn down an opportunity to talk, be it something planned or something ad-hoc. I've spoken at [London VMUG](https://community.vmug.com/communities/localcommunityhome?CommunityKey=0433de49-138a-4270-bc83-b64b8ea303a7), served as [Kev Johnson](https://twitter.com/kev_johnson)'s warm-up man at the London vSphere Upgrade Roadshow and have spoken at the VMUG Leader Gathering at VMworld Europe in the past few months.
 
 The last Toastmasters meeting I was at, I discovered that two people who were set to talk that night could not make it, so I volunteered to deliver a speech which I was planning to do 2 weeks later. This was a bit of a surprise, but why not challenge myself? I was able to step up because the speech was a storytelling assignment, something that I could just recount from my experiences - I'm a Diplomacy player and I had some tales to tell... 
 
