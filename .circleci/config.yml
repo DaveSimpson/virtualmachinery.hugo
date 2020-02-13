@@ -37,8 +37,3 @@ jobs:
                   # Invalidate landing page
                   aws cloudfront create-invalidation --distribution-id EIES6P0GNKOSY --paths /index.html /
               fi
-
-
-
-
-
