@@ -10,7 +10,7 @@ categories:
 tags: [VMUG, VMware]
 thumbnail: "img/vmug_leader.jpg"
 ---
-##The Gathering of the Clans##
+## The Gathering of the Clans ##
 I was fortunate enough to attend the 2020 VMUG Leader Summit at the VMware HQ in Palo Alto last week. It's not the first one that I've been to and as a member of the VMUG Board of Directors, my attendance is positively encouraged, which is great! The Leader Summit is an opportunity for leaders from many different local VMUG chapters to get together for a couple of days of as much networking, event planning, tip swapping and absorbing VMware information as we can collectively handle.
 
 The general idea is to make everyone who attends a better VMUG Leader, providing additional knowledge, skills, connections and to coin a phrase from one of the previous summits, to PowerUp! It's early in the year, so there is plenty of time for the assembled leaders to take what they learned home, to share it with the other leaders in their chapter and to facilitate some great local meetings for the benefit of the VMUG Membership at large.
