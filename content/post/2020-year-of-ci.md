@@ -120,7 +120,7 @@ workflows:
       - build
 ```
 
-Just add in your own BUCKET_NAME and DISTRIBUTION_ID and away you go. The blog post advises you where to add your S3 key/secret files, but when you get there, the location warns you that it doesn't work like that any more, well, it does!
+Just add in your own `BUCKET_NAME` and `DISTRIBUTION_ID` and away you go. The blog post advises you where to add your S3 key/secret files, but when you get there, the location warns you that it doesn't work like that any more, well, it does!
 
 You can watch the workflows progress when you change your code, this config is relatively simple and does the following, in a function called "build";
 
