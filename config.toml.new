@@ -1,0 +1,69 @@
+baseurl = "/"
+title = "VirtualMachinery"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "virtualmachinery" # Enable comments by entering your Disqus shortname
+googleAnalytics = "UA-34254926-2" # Enable Google Analytics by entering your tracking id
+
+[Author] # Used in authorbox
+  name = "Dave Simpson"
+  bio = "VMUG Board Member, London VMUG Leader, Multi-year vExpert, Toastmaster, Homelabber and amateur hack blogger!"
+  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "Discussing virtually anything" # Subtitle of your site
+  description = " In which a VMware administrator, architect, designer, implementor, migrator, operator, vExpert (call me what you will) discusses, saves for his own posterity and shares with others, random information regarding the march towards a cloudy future..." # Description of your site
+  opengraph = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  post_navigation = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  #postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+	#postSections = ["blog", "news"] # alternative that shows more than one section's pages
+	#dateformat = "2006-01-02" # change the format of dates
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+  # Enable "Social" widget, if any of "social_*" set a value
+  social_twitter = "bfd_diplomacy"
+  social_linkedin = "vdavesimpson/"
+  social_github = "DaveSimpson"
+  social_facebook = "dave.simpson.9659"
+  #social_email = "example@example.com"
+
+[deployment]
+	# Files that match the regular expressions in the "Order" list will be uploaded first, in the listed order.
+	order = [".jpg$", ".gif$", ".png$"]
+
+[[deployment.targets]]
+	name = "virtualmachinery_s3"
+	# S3; see https://gocloud.dev/howto/blob/#s3
+	URL = "s3://virtualmachinery.co.uk?region=eu-west-2"
+	cloudFrontDistributionID = "EIES6P0GNKOSY"
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+[[deployment.matchers]]
+	#  Cache static assets for 1 year.
+	pattern = "^.+\\.(js|css|svg|ttf)$"
+	cacheControl = "max-age=31536000, no-transform, public"
+	gzip = true
+
+[[deployment.matchers]]
+	pattern = "^.+\\.(png|jpg)$"
+	cacheControl = "max-age=31536000, no-transform, public"
+	gzip = false
+
+[[deployment.matchers]]
+	pattern = "^.+\\.(html|xml|json)$"
+	gzip = true
