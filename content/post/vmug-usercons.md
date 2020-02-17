@@ -21,7 +21,7 @@ The lifeblood of VMUG is its [200+ local chapters](https://www.vmug.com/events2/
 
 A UserCon is designed to be at a scale above that. All day events, many sponsors, four or more tracks and as such, more attendees. On the whole, everything is bigger, including the catchment area and although these events still very much have VMUG Leaders at the heart of things, they're done in collaboration with the staff at VMUG HQ, be that in the US or Europe. It's safe to say that the local groups couldn't do it on their own, as at this scale, we're into proper events management. Where we have over 200 local groups, there's around 20 UserCons each year, mostly in North America, Europe and Australia. They're definitely worth attending, so go see if there's one [scheduled near you](https://www.vmug.com/events2/vmug-usercon)...
 
-And did I mention, UserCons are free? 
+And did I mention, UserCons are free? It's worth reiterating, anyway.
 
 ## Running the UK UserCon ##
 The London VMUG Leaders ran the UK UserCon, so when I became a London Leader at the start of 2016, I had a UserCon to help organise too. Traditionally, as I said above, this was held at the National Motorcycle Museum, near Solihull in the English West Midlands. The traditional vCurry the night before had become something of an institution, too. With 6 tracks of content and an early start, there was a lot to fit in to a single day. It helped to get a hotel in the area the night before, so what better option after getting that done than to go socialise with other VMUG Members and eat curry? 
