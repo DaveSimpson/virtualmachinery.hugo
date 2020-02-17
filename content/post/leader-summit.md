@@ -1,7 +1,7 @@
 ---
 author: Dave Simpson
-date: 2020-01-23T01:08:20Z
-publishDate: 2020-01-29T01:08:20Z
+date: 2020-02-29T17:08:20Z
+publishDate: 2020-01-29T17:38:20Z
 draft: true
 title: 'This Years VMUG Leader Summit'
 description: "Attending the VMware User Group Leader Summit at VMware's Palo Alto HQ"

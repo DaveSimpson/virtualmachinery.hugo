@@ -6,13 +6,13 @@ title: 'UK VMUG UserCons'
 description: "Moving the UserCon, moving out of the UserCon..."
 categories:
 - Posts
-tags: [VMUG,VMware,Community]
+tags: [VMUG, VMware, Community]
 thumbnail: "img/ukvmug.png"
 ---
 ## Background ##
 Once I had discovered London VMUG but before I became a VMUG Leader, I used to attend the UK VMUG UserCon ([UKVMUG](https://twitter.com/ukvmug/)) as a delegate, because it was way easier to sell my boss on me attending a day and a half at UKVMUG at the Motorcycle Museum in Birmingham than it was to ask to attend VMworld in Barcelona for a week. It helps that attending a UserCon is free! The UK UserCon was always scheduled to be after VMworld Europe, so that all the latest announcements from the US and EU shows could be brought in to play. Historically, there was also co-operation with our friends in the Italian VMUG, so the Italian UserCon would be on the Tuesday and the UK UserCon followed on Thursday, with a vCurry at the UK venue on the Wednesday night. This attracted speakers from the US who could double-dip, which was great for the vCommunity! 
 
-There's been many great sessions delivered at the UK UserCon, too many to mention here, so I will just mention one thing. Each year, I'd get to hear Joe Baguley's keynote, so I'd hear something on VMware's vision each year and then it was pretty easy to go back to work and tell people what was going to happen in the future, thus appearing smarter than I am (Thanks, Joe!). Joe's done nine of these keynotes now, which has demonstrated two very clear things, firstly that there's been a long term vision at VMware and it's been interesting to watch this develop over the years and secondly that Joe is a huge advocate for VMUG and sees great value in talking at VMUGs. 
+There's been many great sessions delivered at the UK UserCon, too many to mention here, so I will just mention one thing. Each year, I'd get to hear [Joe Baguley's](https://twitter.com/JoeBaguley) keynote, so I'd hear something on VMware's vision each year and then it was pretty easy to go back to work and tell people what was going to happen in the future, thus appearing smarter than I am (Thanks, Joe!). Joe's done nine of these keynotes now, which has demonstrated two very clear things, firstly that there's been a long term vision at VMware and it's been interesting to watch this develop over the years and secondly that Joe is a huge advocate for VMUG and sees great value in talking at VMUGs. 
 
 The three LonVMUG meetings and the UKVMUG was my annual VMware education for several years - and I like to think that it stood me in good stead.
 

@@ -4,7 +4,7 @@ date: 2020-02-17T00:05:55Z
 publishDate: 2020-02-17T09:05:55Z
 draft: false
 title: '2020 - Year of CI (not VDI)'
-description: ""
+description: "Adding CI to my static website"
 categories:
 - Posts
 tags: [blog]
@@ -52,3 +52,87 @@ All I'd had to do to make this work was append a bunch of lines to my config.tom
 ```
 
 This meant that I could do everything from Powershell,  but there was one massive drawback, this didn't allow me to upload any content to be published at a future time, which could be a bit of a problem! 
+
+## Enter CircleCI ##
+The solution to my problem was to go fully CI, so what I needed was some way to rebuild my site, ideally in two seperate situations;
+
+1. whenever I update it.
+2. On a schedule, so content will drop when I want, without me having to intervene.
+
+[CircleCI](https://circleci.com/blog/automate-your-static-site-deployment-with-circleci/) allows you to do both of these things relatively easily, assuming that you have a GitHub repo or similar. Sign up, link CircleCi to your GitHub account, setup a bit of config and you're good to go. The link above to one of their blog posts will walk you through things. Here's the config I'm using if this helps you get started;
+
+```js
+version: 2
+jobs:
+  build:
+    docker:
+        - image: cibuilds/hugo:0.56
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run:
+          name: "Installing aws"
+          command: |
+              # TODO Should have these setup correctly as (cached) dependencies
+              apk add --update py-pip python-dev
+              pip install awscli --upgrade --user
+      - run:
+          name: "Run Hugo"
+          command: hugo -v 
+#      - run:
+#          name: "Test Website"
+#          command: htmlproofer /root/project/public --allow-hash-href --check-html --empty-alt-ignore --disable-external
+      - deploy:
+          command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  # Copy over pages - not static js/img/css/downloads
+                  ~/.local/bin/aws s3 sync --acl "public-read" --sse "AES256" public/ s3://BUCKET_NAME/ --exclude 'img' --exclude 'post'
+
+                  # Ensure static files are set to cache forever - cache for a month --cache-control "max-age=2592000"
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/img/ s3://BUCKET_NAME/img/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/css/ s3://BUCKET_NAME/css/
+                  ~/.local/bin/aws s3 sync --cache-control "max-age=2592000" --acl "public-read" --sse "AES256" public/js/ s3://BUCKET_NAME/js/
+                  
+                  # Downloads binaries, not part of repo - cache at edge for a year --cache-control "max-age=31536000"
+                  # ~/.local/bin/aws s3 sync --cache-control "max-age=31536000" --acl "public-read" --sse "AES256" static/downloads/ s3://BUCKET_NAME/downloads/
+
+                  # Invalidate landing page
+                  ~/.local/bin/aws cloudfront create-invalidation --distribution-id DISTRIBUTION_ID --paths /index.html / /page/*
+                  # ~/.local/bin/aws cloudfront create-invalidation --distribution-id DISTRIBUTION_ID --paths /*
+              fi
+              
+workflows:
+  version: 2
+  commit-workflow:
+    jobs:
+      - build 
+  scheduled-workflow:
+    triggers:
+      - schedule:
+          cron: "0 10,20 * * *"
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - build
+```
+
+Just add in your own BUCKET_NAME and DISTRIBUTION_ID and away you go. The blog post advises you where to add your S3 key/secret files, but when you get there, the location warns you that it doesn't work like that any more, well, it does!
+
+You can watch the workflows progress when you change your code, this config is relatively simple and does the following, in a function called "build";
+
+- Fires up a container that has Hugo installed
+- Grabs your site from GitHub
+- Installs AWSCLI
+- Runs Hugo
+- Uploads the publc files to S3, CloudFront aware
+- Invalidates CloudFront
+
+The container is up for about a minute, the CloudFront piece takes a little longer. 
+
+The Workflows section shows that I have the "build" job ready to run every time I commit-workflow and also on a cron trigger, at 10AM and 8PM Zulu time. 
+
+This site that you're reading now gets rebuilt a couple of times a day, plus anytime I push to GitHub.
