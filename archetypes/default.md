@@ -1,6 +1,7 @@
 ---
 author: Dave Simpson
 date: {{ .Date }}
+publishDate: {{ .Date }}
 draft: true
 title: '{{ replace .TranslationBaseName "-" " " | title }}'
 description: ""
