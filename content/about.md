@@ -16,7 +16,7 @@ Hello, I'm Dave Simpson, I've been an IT professional for over 20 years now, all
 ## Virtualisation 
 This has been my thing since the days of vSphere 2.5 and I'm VCP certified on vSphere 3.5 to 6.5. Gotta get off that certification treadmill one day. I'm also a VMware vExpert for 2015 through 2020. 
 
-[![vExpert 2015-2020](/img/2020vExpert.PNG)] (/img/2020vExpert.PNG "Obligatory vExpert badge")
+[![vExpert 2015-2020](/img/2020vExpert.png)] (/img/2020vExpert.png "Obligatory vExpert badge")
 
 I've designed and implemented a number of VMware deployments, including with that a range of items such as datacentre migration and consolidation, BC and DR,  automation and orchestration, monitoring, VDI, you name it. I also get involved with the physical server, storage and networking considerations that go hand in hand with a virtual role. I'm also familiar with all manner of hardware - there's been a number of vendors in and out over the years, basically all the ones you'd expect to see in a big American Insurance Company. I think that's wooly enough.
 
